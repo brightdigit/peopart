@@ -18,6 +18,10 @@
 		B302E5DD22A048B300D573F2 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B302E5DC22A048B300D573F2 /* ExtensionDelegate.swift */; };
 		B302E5DF22A048B300D573F2 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B302E5DE22A048B300D573F2 /* NotificationController.swift */; };
 		B302E5E122A048B300D573F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B302E5E022A048B300D573F2 /* Assets.xcassets */; };
+		B3F89E0D22A05B7600391807 /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F89E0A22A05B7500391807 /* UIWindow.swift */; };
+		B3F89E0E22A05B7600391807 /* TabItemable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F89E0B22A05B7500391807 /* TabItemable.swift */; };
+		B3F89E0F22A05B7600391807 /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F89E0C22A05B7600391807 /* UITabBarController.swift */; };
+		B3F89E1122A05BA900391807 /* UsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F89E1022A05BA900391807 /* UsersTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +83,10 @@
 		B302E5E022A048B300D573F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B302E5E222A048B300D573F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B302E5E322A048B300D573F2 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B3F89E0A22A05B7500391807 /* UIWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
+		B3F89E0B22A05B7500391807 /* TabItemable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItemable.swift; sourceTree = "<group>"; };
+		B3F89E0C22A05B7600391807 /* UITabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
+		B3F89E1022A05BA900391807 /* UsersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,10 +130,12 @@
 		B302E5B622A048B000D573F2 /* peopart-app */ = {
 			isa = PBXGroup;
 			children = (
+				B302E5C322A048B200D573F2 /* Info.plist */,
 				B302E5B722A048B000D573F2 /* AppDelegate.swift */,
 				B302E5BE22A048B200D573F2 /* Assets.xcassets */,
+				B3F89E1222A05C8500391807 /* Controllers */,
+				B3F89E1322A05C9100391807 /* Extensions */,
 				B302E5C022A048B200D573F2 /* LaunchScreen.storyboard */,
-				B302E5C322A048B200D573F2 /* Info.plist */,
 			);
 			path = "peopart-app";
 			sourceTree = "<group>";
@@ -151,6 +161,24 @@
 				B302E5E322A048B300D573F2 /* PushNotificationPayload.apns */,
 			);
 			path = "peopart-app WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B3F89E1222A05C8500391807 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B3F89E1022A05BA900391807 /* UsersTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B3F89E1322A05C9100391807 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B3F89E0B22A05B7500391807 /* TabItemable.swift */,
+				B3F89E0C22A05B7600391807 /* UITabBarController.swift */,
+				B3F89E0A22A05B7500391807 /* UIWindow.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,7 +312,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3F89E0E22A05B7600391807 /* TabItemable.swift in Sources */,
+				B3F89E0F22A05B7600391807 /* UITabBarController.swift in Sources */,
 				B302E5B822A048B000D573F2 /* AppDelegate.swift in Sources */,
+				B3F89E1122A05BA900391807 /* UsersTableViewController.swift in Sources */,
+				B3F89E0D22A05B7600391807 /* UIWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
