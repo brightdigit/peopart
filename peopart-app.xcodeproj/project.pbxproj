@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B302E5B822A048B000D573F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B302E5B722A048B000D573F2 /* AppDelegate.swift */; };
+		B302E5BA22A048B000D573F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B302E5B922A048B000D573F2 /* ViewController.swift */; };
+		B302E5BD22A048B000D573F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B302E5BB22A048B000D573F2 /* Main.storyboard */; };
+		B302E5BF22A048B200D573F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B302E5BE22A048B200D573F2 /* Assets.xcassets */; };
+		B302E5C222A048B200D573F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B302E5C022A048B200D573F2 /* LaunchScreen.storyboard */; };
+		B302E5C722A048B200D573F2 /* peopart-app WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B302E5C622A048B200D573F2 /* peopart-app WatchKit App.app */; };
+		B302E5CD22A048B200D573F2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B302E5CB22A048B200D573F2 /* Interface.storyboard */; };
+		B302E5CF22A048B300D573F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B302E5CE22A048B300D573F2 /* Assets.xcassets */; };
+		B302E5D622A048B300D573F2 /* peopart-app WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B302E5D522A048B300D573F2 /* peopart-app WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B302E5DB22A048B300D573F2 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B302E5DA22A048B300D573F2 /* InterfaceController.swift */; };
+		B302E5DD22A048B300D573F2 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B302E5DC22A048B300D573F2 /* ExtensionDelegate.swift */; };
+		B302E5DF22A048B300D573F2 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B302E5DE22A048B300D573F2 /* NotificationController.swift */; };
+		B302E5E122A048B300D573F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B302E5E022A048B300D573F2 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B302E5C822A048B200D573F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B302E5AC22A048B000D573F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B302E5C522A048B200D573F2;
+			remoteInfo = "peopart-app WatchKit App";
+		};
+		B302E5D722A048B300D573F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B302E5AC22A048B000D573F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B302E5D422A048B300D573F2;
+			remoteInfo = "peopart-app WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B302E5E922A048B300D573F2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B302E5D622A048B300D573F2 /* peopart-app WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B302E5ED22A048B400D573F2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B302E5C722A048B200D573F2 /* peopart-app WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B302E5B422A048B000D573F2 /* peopart-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "peopart-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B302E5B722A048B000D573F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B302E5B922A048B000D573F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B302E5BC22A048B000D573F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B302E5BE22A048B200D573F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B302E5C122A048B200D573F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B302E5C322A048B200D573F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B302E5C622A048B200D573F2 /* peopart-app WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "peopart-app WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B302E5CC22A048B200D573F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B302E5CE22A048B300D573F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B302E5D022A048B300D573F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B302E5D522A048B300D573F2 /* peopart-app WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "peopart-app WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B302E5DA22A048B300D573F2 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B302E5DC22A048B300D573F2 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B302E5DE22A048B300D573F2 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B302E5E022A048B300D573F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B302E5E222A048B300D573F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B302E5E322A048B300D573F2 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B302E5B122A048B000D573F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B302E5D222A048B300D573F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B302E5AB22A048B000D573F2 = {
+			isa = PBXGroup;
+			children = (
+				B302E5B622A048B000D573F2 /* peopart-app */,
+				B302E5CA22A048B200D573F2 /* peopart-app WatchKit App */,
+				B302E5D922A048B300D573F2 /* peopart-app WatchKit Extension */,
+				B302E5B522A048B000D573F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B302E5B522A048B000D573F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B302E5B422A048B000D573F2 /* peopart-app.app */,
+				B302E5C622A048B200D573F2 /* peopart-app WatchKit App.app */,
+				B302E5D522A048B300D573F2 /* peopart-app WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B302E5B622A048B000D573F2 /* peopart-app */ = {
+			isa = PBXGroup;
+			children = (
+				B302E5B722A048B000D573F2 /* AppDelegate.swift */,
+				B302E5B922A048B000D573F2 /* ViewController.swift */,
+				B302E5BB22A048B000D573F2 /* Main.storyboard */,
+				B302E5BE22A048B200D573F2 /* Assets.xcassets */,
+				B302E5C022A048B200D573F2 /* LaunchScreen.storyboard */,
+				B302E5C322A048B200D573F2 /* Info.plist */,
+			);
+			path = "peopart-app";
+			sourceTree = "<group>";
+		};
+		B302E5CA22A048B200D573F2 /* peopart-app WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B302E5CB22A048B200D573F2 /* Interface.storyboard */,
+				B302E5CE22A048B300D573F2 /* Assets.xcassets */,
+				B302E5D022A048B300D573F2 /* Info.plist */,
+			);
+			path = "peopart-app WatchKit App";
+			sourceTree = "<group>";
+		};
+		B302E5D922A048B300D573F2 /* peopart-app WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B302E5DA22A048B300D573F2 /* InterfaceController.swift */,
+				B302E5DC22A048B300D573F2 /* ExtensionDelegate.swift */,
+				B302E5DE22A048B300D573F2 /* NotificationController.swift */,
+				B302E5E022A048B300D573F2 /* Assets.xcassets */,
+				B302E5E222A048B300D573F2 /* Info.plist */,
+				B302E5E322A048B300D573F2 /* PushNotificationPayload.apns */,
+			);
+			path = "peopart-app WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B302E5B322A048B000D573F2 /* peopart-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B302E5EE22A048B400D573F2 /* Build configuration list for PBXNativeTarget "peopart-app" */;
+			buildPhases = (
+				B302E5B022A048B000D573F2 /* Sources */,
+				B302E5B122A048B000D573F2 /* Frameworks */,
+				B302E5B222A048B000D573F2 /* Resources */,
+				B302E5ED22A048B400D573F2 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B302E5C922A048B200D573F2 /* PBXTargetDependency */,
+			);
+			name = "peopart-app";
+			productName = "peopart-app";
+			productReference = B302E5B422A048B000D573F2 /* peopart-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B302E5C522A048B200D573F2 /* peopart-app WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B302E5EA22A048B300D573F2 /* Build configuration list for PBXNativeTarget "peopart-app WatchKit App" */;
+			buildPhases = (
+				B302E5C422A048B200D573F2 /* Resources */,
+				B302E5E922A048B300D573F2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B302E5D822A048B300D573F2 /* PBXTargetDependency */,
+			);
+			name = "peopart-app WatchKit App";
+			productName = "peopart-app WatchKit App";
+			productReference = B302E5C622A048B200D573F2 /* peopart-app WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B302E5D422A048B300D573F2 /* peopart-app WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B302E5E622A048B300D573F2 /* Build configuration list for PBXNativeTarget "peopart-app WatchKit Extension" */;
+			buildPhases = (
+				B302E5D122A048B300D573F2 /* Sources */,
+				B302E5D222A048B300D573F2 /* Frameworks */,
+				B302E5D322A048B300D573F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "peopart-app WatchKit Extension";
+			productName = "peopart-app WatchKit Extension";
+			productReference = B302E5D522A048B300D573F2 /* peopart-app WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B302E5AC22A048B000D573F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Leo Dion";
+				TargetAttributes = {
+					B302E5B322A048B000D573F2 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					B302E5C522A048B200D573F2 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					B302E5D422A048B300D573F2 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = B302E5AF22A048B000D573F2 /* Build configuration list for PBXProject "peopart-app" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B302E5AB22A048B000D573F2;
+			productRefGroup = B302E5B522A048B000D573F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B302E5B322A048B000D573F2 /* peopart-app */,
+				B302E5C522A048B200D573F2 /* peopart-app WatchKit App */,
+				B302E5D422A048B300D573F2 /* peopart-app WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B302E5B222A048B000D573F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B302E5C222A048B200D573F2 /* LaunchScreen.storyboard in Resources */,
+				B302E5BF22A048B200D573F2 /* Assets.xcassets in Resources */,
+				B302E5BD22A048B000D573F2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B302E5C422A048B200D573F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B302E5CF22A048B300D573F2 /* Assets.xcassets in Resources */,
+				B302E5CD22A048B200D573F2 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B302E5D322A048B300D573F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B302E5E122A048B300D573F2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B302E5B022A048B000D573F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B302E5BA22A048B000D573F2 /* ViewController.swift in Sources */,
+				B302E5B822A048B000D573F2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B302E5D122A048B300D573F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B302E5DF22A048B300D573F2 /* NotificationController.swift in Sources */,
+				B302E5DD22A048B300D573F2 /* ExtensionDelegate.swift in Sources */,
+				B302E5DB22A048B300D573F2 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B302E5C922A048B200D573F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B302E5C522A048B200D573F2 /* peopart-app WatchKit App */;
+			targetProxy = B302E5C822A048B200D573F2 /* PBXContainerItemProxy */;
+		};
+		B302E5D822A048B300D573F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B302E5D422A048B300D573F2 /* peopart-app WatchKit Extension */;
+			targetProxy = B302E5D722A048B300D573F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B302E5BB22A048B000D573F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B302E5BC22A048B000D573F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B302E5C022A048B200D573F2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B302E5C122A048B200D573F2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B302E5CB22A048B200D573F2 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B302E5CC22A048B200D573F2 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B302E5E422A048B300D573F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B302E5E522A048B300D573F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B302E5E722A048B300D573F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MLT7M394S7;
+				INFOPLIST_FILE = "peopart-app WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brightdigit.peopart-app.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		B302E5E822A048B300D573F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MLT7M394S7;
+				INFOPLIST_FILE = "peopart-app WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brightdigit.peopart-app.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		B302E5EB22A048B300D573F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MLT7M394S7;
+				IBSC_MODULE = peopart_app_WatchKit_Extension;
+				INFOPLIST_FILE = "peopart-app WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brightdigit.peopart-app.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Debug;
+		};
+		B302E5EC22A048B300D573F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MLT7M394S7;
+				IBSC_MODULE = peopart_app_WatchKit_Extension;
+				INFOPLIST_FILE = "peopart-app WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brightdigit.peopart-app.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		B302E5EF22A048B400D573F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MLT7M394S7;
+				INFOPLIST_FILE = "peopart-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brightdigit.peopart-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B302E5F022A048B400D573F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MLT7M394S7;
+				INFOPLIST_FILE = "peopart-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brightdigit.peopart-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B302E5AF22A048B000D573F2 /* Build configuration list for PBXProject "peopart-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B302E5E422A048B300D573F2 /* Debug */,
+				B302E5E522A048B300D573F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B302E5E622A048B300D573F2 /* Build configuration list for PBXNativeTarget "peopart-app WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B302E5E722A048B300D573F2 /* Debug */,
+				B302E5E822A048B300D573F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B302E5EA22A048B300D573F2 /* Build configuration list for PBXNativeTarget "peopart-app WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B302E5EB22A048B300D573F2 /* Debug */,
+				B302E5EC22A048B300D573F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B302E5EE22A048B400D573F2 /* Build configuration list for PBXNativeTarget "peopart-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B302E5EF22A048B400D573F2 /* Debug */,
+				B302E5F022A048B400D573F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B302E5AC22A048B000D573F2 /* Project object */;
+}
