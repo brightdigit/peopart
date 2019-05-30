@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="659" height="225"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3im-Hk-5Ll">
+                    <rect key="frame" x="20" y="64" width="107" height="107"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="3im-Hk-5Ll" secondAttribute="height" multiplier="1:1" id="9jy-G4-nbU"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ttj-Ao-kWy">
+                    <rect key="frame" x="135" y="64" width="504" height="107"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhz-Jh-8ts">
+                            <rect key="frame" x="0.0" y="0.0" width="504" height="53.5"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="999" text="badge" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vqd-Cr-UUY">
+                            <rect key="frame" x="0.0" y="57.5" width="504" height="25"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="6 posts, latest on July 32" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5d-hl-zU1">
+                            <rect key="frame" x="0.0" y="86.5" width="504" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="mhz-Jh-8ts" firstAttribute="height" secondItem="ttj-Ao-kWy" secondAttribute="height" multiplier="0.5" id="s4L-5o-4mp"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="lBN-9r-0Gv"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ttj-Ao-kWy" secondAttribute="trailing" constant="20" id="8bd-OS-R24"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ttj-Ao-kWy" secondAttribute="bottom" constant="20" id="AUZ-LY-D89"/>
+                <constraint firstItem="ttj-Ao-kWy" firstAttribute="leading" secondItem="3im-Hk-5Ll" secondAttribute="trailing" constant="8" id="DiY-hh-o0p"/>
+                <constraint firstItem="ttj-Ao-kWy" firstAttribute="top" secondItem="3im-Hk-5Ll" secondAttribute="top" id="LMn-mj-8Wi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="3im-Hk-5Ll" secondAttribute="bottom" constant="20" id="LSs-FP-2Lx"/>
+                <constraint firstItem="ttj-Ao-kWy" firstAttribute="bottom" secondItem="3im-Hk-5Ll" secondAttribute="bottom" id="Xga-xI-rsV"/>
+                <constraint firstItem="3im-Hk-5Ll" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="p9M-yU-X0I"/>
+                <constraint firstItem="ttj-Ao-kWy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" constant="20" id="qQq-Mg-ORx"/>
+                <constraint firstItem="3im-Hk-5Ll" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="tCR-Db-Uu5"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="405" y="223"/>
+        </view>
+    </objects>
+</document>
