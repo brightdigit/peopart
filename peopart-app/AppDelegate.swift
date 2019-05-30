@@ -15,7 +15,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+    // create tab bar view controller with one tab for the users list
+    // parse the json file for users, posts, and comments
+    // implement the user fetch operation
+    // setup the table cell for users
+    // display the users in a table
+    
+    /**
+    concepts:
+     * Basic UI Elements
+     * Optionals
+     * Structs vs Classes
+     * Protocols
+     * Enums
+     * Extensions
+     * Codable
+     * Closures
+     * UITableView     
+    */
+    
     return true
   }
 
