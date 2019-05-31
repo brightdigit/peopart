@@ -5,12 +5,19 @@ Sample iOS and watchOS application
 
 ## Step 1
 
-* Display a single tab for listing users (no items needed yet)
+### Concepts
+
+* Understand Basic Swift Syntax
+* Understand Basic Xcode IDE and Project Structure 
 * Understand the structure of view controllers and how to display them
   * [UIViewController](https://developer.apple.com/documentation/uikit/uiviewcontroller)
   * [UITabBarController](https://developer.apple.com/documentation/uikit/uitabbarcontroller)
   * [UINavigationController](https://developer.apple.com/documentation/uikit/uinavigationcontroller)
   * [UITableViewController](https://developer.apple.com/documentation/uikit/uitableviewcontroller)
+
+### Tasks
+
+* Display a single tab for listing users (no items needed yet)
 * Create a class for listing users by subclassing UITableViewController
 
 *Optional*
@@ -21,4 +28,22 @@ Sample iOS and watchOS application
 
 ## Step 2
 
+### Concepts
+
+* Reading a file from the Application [Bundle] using the [Data] type
+* [Codable] protocol for easy JSON decoding
+* [Delgation] pattern and how it is used with [UITableViewController]
+* Basics of [Model-View-Controller] pattern
+* Concept of [Optionals] and how to work with them
+* How to throw and catch [Errors] in Swift
+
+### Tasks
+
+* Parse bundled json file using [Codable] into a set of [structs]
+* Create a custom [UITableViewCell] and understand how to use `@IBOutlet`
+* Display the list of users from the JSON file into the `UsersTableViewController`
+* Understand the basics of updating the user interface and the `main` thread
+
 ![What the end of step 2 should look like](/assets/step-2.jpg?raw=true "Step 2 Result")
+
+[Delegation] : https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Delegation.html
