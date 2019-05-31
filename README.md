@@ -48,6 +48,27 @@ Sample iOS and watchOS application
 
 ## Step 3 - Display More Complex Data
 
+### Concepts
+
+* [JSONDecoder.dateDecodingStrategy]
+* Protocol-Oriented Programming
+* Functional Programming (map, reduce, sorting, max, etc...)
+* Application Transport Security
+  ```
+  <key>NSAppTransportSecurity</key>
+  <dict>
+  <key>NSExceptionDomains</key>
+  <dict>
+  <key>lorempixel.com</key>
+  <dict>
+  <key>NSExceptionAllowsInsecureHTTPLoads</key>
+  <true/>
+  <key>NSIncludesSubdomains</key>
+  <true/>
+  </dict>
+  </dict>
+  </dict>
+  
 ### Tasks
 
 * Setup Posts and Comments
