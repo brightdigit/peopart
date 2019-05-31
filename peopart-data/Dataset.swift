@@ -10,4 +10,6 @@ import Foundation
 
 public struct Dataset : Codable {
   let users : [User]
+  let posts : [Post]
+  let comments : [Comment]
 }

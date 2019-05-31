@@ -48,4 +48,10 @@ Sample iOS and watchOS application
 
 ## Step 3 - Display More Complex Data
 
+### Tasks
+
+* Setup Posts and Comments
+* Dealing with Dates and Codable
+* Basic Functional Programming
+
 [Delegation] : https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Delegation.html
