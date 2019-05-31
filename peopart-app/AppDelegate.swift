@@ -25,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     concepts:
      * Basic UI Elements
      * Optionals
+     * try catch throw
      * Structs vs Classes
      * Protocols
      * Enums
