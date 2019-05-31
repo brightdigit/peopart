@@ -88,3 +88,10 @@ class UsersTableViewController: UITableViewController {
    */
   
 }
+
+extension UsersTableViewController : TabItemable {
+  func configureTabItem(_ tabItem: UITabBarItem) {
+    tabItem.image = UIImage(named: "User")
+    tabItem.title = "Users"
+  }
+}
