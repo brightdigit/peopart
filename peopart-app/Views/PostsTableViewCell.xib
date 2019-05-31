@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PostsTableViewCell" customModule="peopart_app" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="377" height="400"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -99,6 +99,15 @@
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="authorNameLabel" destination="DG5-mb-RfT" id="q0f-9m-P11"/>
+                <outlet property="avatarView" destination="UIR-aV-wTl" id="I54-eP-Bpd"/>
+                <outlet property="bodyLabel" destination="SHE-H2-OlB" id="61t-oK-Ocf"/>
+                <outlet property="dateLabel" destination="Lzn-bG-dB0" id="4Aj-Yb-Awe"/>
+                <outlet property="postImageView" destination="4Za-XG-Ojt" id="1zl-Xa-Ugl"/>
+                <outlet property="summaryLabel" destination="TRL-74-M4w" id="Vpj-zk-oFj"/>
+                <outlet property="titleLabel" destination="8bS-Z0-5tn" id="xTW-oK-T75"/>
+            </connections>
             <point key="canvasLocation" x="74.637681159420296" y="-170.75892857142856"/>
         </view>
     </objects>

@@ -53,5 +53,6 @@ Sample iOS and watchOS application
 * Setup Posts and Comments
 * Dealing with Dates and Codable
 * Basic Functional Programming
+* Setup Application Transport Security
 
 [Delegation] : https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Delegation.html

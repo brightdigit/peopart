@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    let tabBarController = UITabBarController(navigationRootViewControllers: [UsersTableViewController()])
+    let tabBarController = UITabBarController(navigationRootViewControllers: [UsersTableViewController(), PostsTableViewController()])
     let window = UIWindow.makeWindow(keyAndVisibleWithViewController: tabBarController)
     self.window = window
     // create tab bar view controller with one tab for the users list
