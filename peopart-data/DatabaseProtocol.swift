@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol DatabaseProtocol {
+protocol DatabaseProtocol {
   static var shared : DatabaseProtocol { get }
-  func users (_ completion: @escaping (Result<[UserProtocol], Error>) -> Void)  
+  func users (_ completion: @escaping (Result<[UserEmbeddedProtocol], Error>) -> Void)  
 }

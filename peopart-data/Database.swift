@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Database : DatabaseProtocol {
+struct Database : DatabaseProtocol {
   let dataset : Dataset
   
   public static let defaultSource : DataSource = .bundle(Bundle.main, withResource: "db", andExtension: "json")
@@ -22,8 +22,8 @@ public struct Database : DatabaseProtocol {
     self.dataset = tables
   }
   
-  public func users(_ completion: @escaping (Result<[UserProtocol], Error>) -> Void) {
-    completion(.success(self.dataset.users))
+  public func users(_ completion: @escaping (Result<[UserEmbeddedProtocol], Error>) -> Void) {
+    //completion(.success(self.dataset.users))
   }
   
 }

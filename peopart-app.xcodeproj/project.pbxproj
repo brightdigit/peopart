@@ -38,6 +38,17 @@
 		B3F92A9922A0A8D500C36269 /* DataSourceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F92A9822A0A8D500C36269 /* DataSourceError.swift */; };
 		B3F92A9B22A173F300C36269 /* Dataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F92A9A22A173F300C36269 /* Dataset.swift */; };
 		B3F92A9C22A173F600C36269 /* Dataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F92A9A22A173F300C36269 /* Dataset.swift */; };
+		B3F92A9E22A1AD1D00C36269 /* PostProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F92A9D22A1AD1D00C36269 /* PostProtocol.swift */; };
+		B3F92AA022A1AD3100C36269 /* CommentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F92A9F22A1AD3100C36269 /* CommentProtocol.swift */; };
+		B3F92AA222A1AE8C00C36269 /* UserEmbeddedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F92AA122A1AE8C00C36269 /* UserEmbeddedProtocol.swift */; };
+		B3F92AA522A1AF7200C36269 /* PostEmbeddedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F92AA422A1AF7200C36269 /* PostEmbeddedProtocol.swift */; };
+		B3F92AA922A1B0D500C36269 /* PostProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F92A9D22A1AD1D00C36269 /* PostProtocol.swift */; };
+		B3F92AAA22A1B0D500C36269 /* CommentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F92A9F22A1AD3100C36269 /* CommentProtocol.swift */; };
+		B3F92AAB22A1B0D500C36269 /* UserEmbeddedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F92AA122A1AE8C00C36269 /* UserEmbeddedProtocol.swift */; };
+		B3F92AAC22A1B0D500C36269 /* PostEmbeddedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F92AA422A1AF7200C36269 /* PostEmbeddedProtocol.swift */; };
+		B3F92AAD22A1B0D900C36269 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F92A9622A0A8BD00C36269 /* DataSource.swift */; };
+		B3F92AAE22A1B0D900C36269 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F92A9022A09A5400C36269 /* Database.swift */; };
+		B3F92AAF22A1B0D900C36269 /* DataSourceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F92A9822A0A8D500C36269 /* DataSourceError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +126,10 @@
 		B3F92A9622A0A8BD00C36269 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		B3F92A9822A0A8D500C36269 /* DataSourceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceError.swift; sourceTree = "<group>"; };
 		B3F92A9A22A173F300C36269 /* Dataset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dataset.swift; sourceTree = "<group>"; };
+		B3F92A9D22A1AD1D00C36269 /* PostProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProtocol.swift; sourceTree = "<group>"; };
+		B3F92A9F22A1AD3100C36269 /* CommentProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentProtocol.swift; sourceTree = "<group>"; };
+		B3F92AA122A1AE8C00C36269 /* UserEmbeddedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEmbeddedProtocol.swift; sourceTree = "<group>"; };
+		B3F92AA422A1AF7200C36269 /* PostEmbeddedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEmbeddedProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +238,10 @@
 				B3F92A8822A06D9500C36269 /* User.swift */,
 				B3F92A9022A09A5400C36269 /* Database.swift */,
 				B3F92A9822A0A8D500C36269 /* DataSourceError.swift */,
+				B3F92A9D22A1AD1D00C36269 /* PostProtocol.swift */,
+				B3F92A9F22A1AD3100C36269 /* CommentProtocol.swift */,
+				B3F92AA122A1AE8C00C36269 /* UserEmbeddedProtocol.swift */,
+				B3F92AA422A1AF7200C36269 /* PostEmbeddedProtocol.swift */,
 			);
 			path = "peopart-data";
 			sourceTree = "<group>";
@@ -372,9 +391,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3F92AA222A1AE8C00C36269 /* UserEmbeddedProtocol.swift in Sources */,
 				B3F89E0E22A05B7600391807 /* TabItemable.swift in Sources */,
 				B3F92A8322A06C5400C36269 /* DatabaseProtocol.swift in Sources */,
+				B3F92AA522A1AF7200C36269 /* PostEmbeddedProtocol.swift in Sources */,
 				B3F89E0F22A05B7600391807 /* UITabBarController.swift in Sources */,
+				B3F92A9E22A1AD1D00C36269 /* PostProtocol.swift in Sources */,
+				B3F92AA022A1AD3100C36269 /* CommentProtocol.swift in Sources */,
 				B3F92A9922A0A8D500C36269 /* DataSourceError.swift in Sources */,
 				B302E5B822A048B000D573F2 /* AppDelegate.swift in Sources */,
 				B3F92A8922A06D9500C36269 /* User.swift in Sources */,
@@ -393,11 +416,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				B302E5DF22A048B300D573F2 /* NotificationController.swift in Sources */,
+				B3F92AAC22A1B0D500C36269 /* PostEmbeddedProtocol.swift in Sources */,
+				B3F92AAA22A1B0D500C36269 /* CommentProtocol.swift in Sources */,
 				B3F92A9C22A173F600C36269 /* Dataset.swift in Sources */,
 				B3F92A8422A06C5400C36269 /* DatabaseProtocol.swift in Sources */,
+				B3F92AAF22A1B0D900C36269 /* DataSourceError.swift in Sources */,
 				B3F92A8A22A06D9500C36269 /* User.swift in Sources */,
+				B3F92AAD22A1B0D900C36269 /* DataSource.swift in Sources */,
 				B302E5DD22A048B300D573F2 /* ExtensionDelegate.swift in Sources */,
+				B3F92AA922A1B0D500C36269 /* PostProtocol.swift in Sources */,
 				B3F92A8722A06C7000C36269 /* UserProtocol.swift in Sources */,
+				B3F92AAB22A1B0D500C36269 /* UserEmbeddedProtocol.swift in Sources */,
+				B3F92AAE22A1B0D900C36269 /* Database.swift in Sources */,
 				B302E5DB22A048B300D573F2 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

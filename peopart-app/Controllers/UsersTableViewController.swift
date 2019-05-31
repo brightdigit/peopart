@@ -9,7 +9,7 @@
 import UIKit
 
 class UsersTableViewController: UITableViewController {
-  var users : [UserProtocol]?
+  var users : [UserEmbeddedProtocol]?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -39,7 +39,7 @@ class UsersTableViewController: UITableViewController {
       return cell
     }
     
-    guard let imageData = try? Data(contentsOf: user.avatar) else {
+    guard let imageData = try? Data(contentsOf: user.user.avatar) else {
       return cell
     }
     
@@ -48,8 +48,8 @@ class UsersTableViewController: UITableViewController {
     }
     
     userCell.avatarImageView.image = UIImage(data: imageData)
-    userCell.nameLabel.text = user.name
-    userCell.badgeLabel.text = user.badge
+    userCell.nameLabel.text = user.user.name
+    userCell.badgeLabel.text = user.user.badge
     
     return userCell
   }
