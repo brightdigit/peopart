@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UsersTableViewCell" customModule="peopart_app" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="659" height="225"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -66,6 +66,12 @@
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="avatarImageView" destination="3im-Hk-5Ll" id="eqa-6m-Z9l"/>
+                <outlet property="badgeLabel" destination="Vqd-Cr-UUY" id="JxC-vt-JIa"/>
+                <outlet property="nameLabel" destination="mhz-Jh-8ts" id="h23-Rp-ytM"/>
+                <outlet property="summaryLabel" destination="C5d-hl-zU1" id="3yf-4O-nGQ"/>
+            </connections>
             <point key="canvasLocation" x="405" y="223"/>
         </view>
     </objects>

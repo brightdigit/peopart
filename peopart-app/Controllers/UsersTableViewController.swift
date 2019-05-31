@@ -9,38 +9,50 @@
 import UIKit
 
 class UsersTableViewController: UITableViewController {
+  var users : [UserProtocol]?
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = false
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    self.tableView.register(UINib(nibName: "UsersTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "users")
+    Database.shared.users { (result) in
+      if case let .success(users) = result {
+        self.users = users
+        DispatchQueue.main.async {
+          self.tableView.reloadData()
+        }
+      }
+    }
   }
   
   // MARK: - Table view data source
   
-  override func numberOfSections(in tableView: UITableView) -> Int {
-    // #warning Incomplete implementation, return the number of sections
-    return 0
-  }
-  
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     // #warning Incomplete implementation, return the number of rows
-    return 0
+    return self.users?.count ?? 0
   }
   
-  /*
-   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-   let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-   
-   // Configure the cell...
-   
-   return cell
-   }
-   */
+  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "users", for: indexPath)
+    
+    guard let user = self.users?[indexPath.row] else {
+      return cell
+    }
+    
+    guard let imageData = try? Data(contentsOf: user.avatar) else {
+      return cell
+    }
+    
+    guard let userCell = cell as? UsersTableViewCell else {
+      return cell
+    }
+    
+    userCell.avatarImageView.image = UIImage(data: imageData)
+    userCell.nameLabel.text = user.name
+    userCell.badgeLabel.text = user.badge
+    
+    return userCell
+  }
   
   /*
    // Override to support conditional editing of the table view.
@@ -87,4 +99,11 @@ class UsersTableViewController: UITableViewController {
    }
    */
   
+}
+
+extension UsersTableViewController : TabItemable {
+  func configureTabItem(_ tabItem: UITabBarItem) {
+    tabItem.image = UIImage(named: "User")
+    tabItem.title = "Users"
+  }
 }

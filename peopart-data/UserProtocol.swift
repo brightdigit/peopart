@@ -9,5 +9,8 @@
 import Foundation
 
 public protocol UserProtocol {
-  
+  var id : UUID { get }
+  var name : String { get }
+  var avatar : URL { get }
+  var badge : String { get }
 }
