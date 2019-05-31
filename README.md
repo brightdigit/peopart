@@ -17,3 +17,8 @@ Sample iOS and watchOS application
 
 * Use [extensions](https://docs.swift.org/swift-book/LanguageGuide/Extensions.html) to refactor the way our view controllers are displayed
 
+![What the end of step 1 should look like](/assets/step-1.jpg?raw=true "Step 1 Result")
+
+## Step 2
+
+![What the end of step 2 should look like](/assets/step-2.jpg?raw=true "Step 2 Result")
