@@ -32,7 +32,7 @@ Sample iOS and watchOS application
 
 * Reading a file from the Application [Bundle] using the [Data] type
 * [Codable] protocol for easy JSON decoding
-* [Delgation] pattern and how it is used with [UITableViewController]
+* [Delegation] pattern and how it is used with [UITableViewController]
 * Basics of [Model-View-Controller] pattern
 * Concept of [Optionals] and how to work with them
 * How to throw and catch [Errors] in Swift
@@ -68,7 +68,6 @@ Sample iOS and watchOS application
   </dict>
   </dict>
   </dict>
-  
 ### Tasks
 
 * Setup Posts and Comments
@@ -76,4 +75,4 @@ Sample iOS and watchOS application
 * Basic Functional Programming
 * Setup Application Transport Security
 
-[Delegation] : https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Delegation.html
+[Delegation]: https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Delegation.html
