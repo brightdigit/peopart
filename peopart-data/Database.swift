@@ -9,7 +9,7 @@
 import Foundation
 
 public struct Database : DatabaseProtocol {
-  let tables : DataSet
+  let dataset : Dataset
   
   public static let defaultSource : DataSource = .bundle(Bundle.main, withResource: "db", andExtension: "json")
   public static let shared: DatabaseProtocol = try! Database()
@@ -18,12 +18,12 @@ public struct Database : DatabaseProtocol {
     
     let dbData = try source.getData()
     let jsonDecoder = JSONDecoder()
-    let tables = try jsonDecoder.decode(DataSet.self, from: dbData)
-    self.tables = tables
+    let tables = try jsonDecoder.decode(Dataset.self, from: dbData)
+    self.dataset = tables
   }
   
   public func users(_ completion: @escaping (Result<[UserProtocol], Error>) -> Void) {
-    completion(.success(self.tables.users))
+    completion(.success(self.dataset.users))
   }
   
 }
