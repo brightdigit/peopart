@@ -8,6 +8,6 @@
 
 import Foundation
 
-public struct DataSet : Codable {
+public struct Dataset : Codable {
   let users : [User]
 }
