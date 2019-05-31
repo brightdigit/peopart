@@ -3,7 +3,7 @@ Sample iOS and watchOS application
 
 ![Resulting Application Demonstration](/assets/demo.gif?raw=true "Resulting Application")
 
-## Step 1
+## Step 1 - Setup UI Navigation Structure
 
 ### Concepts
 
@@ -26,7 +26,7 @@ Sample iOS and watchOS application
 
 ![What the end of step 1 should look like](/assets/step-1.jpg?raw=true "Step 1 Result")
 
-## Step 2
+## Step 2 - Parse and Display Data
 
 ### Concepts
 
@@ -45,5 +45,7 @@ Sample iOS and watchOS application
 * Understand the basics of updating the user interface and the `main` thread
 
 ![What the end of step 2 should look like](/assets/step-2.jpg?raw=true "Step 2 Result")
+
+## Step 3 - Display More Complex Data
 
 [Delegation] : https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Delegation.html
