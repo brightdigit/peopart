@@ -100,6 +100,7 @@
 		B302E5E222A048B300D573F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B302E5E322A048B300D573F2 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		B345374622A1555800FE9C39 /* PostsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostsTableViewCell.xib; sourceTree = "<group>"; };
+		B345374922A19B6500FE9C39 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B3F89E0A22A05B7500391807 /* UIWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
 		B3F89E0B22A05B7500391807 /* TabItemable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItemable.swift; sourceTree = "<group>"; };
 		B3F89E0C22A05B7600391807 /* UITabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
@@ -137,6 +138,7 @@
 		B302E5AB22A048B000D573F2 = {
 			isa = PBXGroup;
 			children = (
+				B345374922A19B6500FE9C39 /* README.md */,
 				B3F92A7122A06AD800C36269 /* peopart-data */,
 				B302E5B622A048B000D573F2 /* peopart-app */,
 				B302E5CA22A048B200D573F2 /* peopart-app WatchKit App */,
