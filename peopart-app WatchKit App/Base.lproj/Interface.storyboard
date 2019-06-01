@@ -9,10 +9,32 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--table-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="peopart_app_WatchKit_App" customModuleProvider="target"/>
+                <controller identifier="table" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="peopart_app_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="Fuo-E2-2Eg">
+                            <items>
+                                <tableRow identifier="row" id="umd-BB-FNq" customClass="RowController" customModule="peopart_app_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" spacing="4" id="j2d-Bg-uNP">
+                                        <items>
+                                            <imageView width="30" height="1" heightAdjustment="-8" alignment="left" verticalAlignment="center" contentMode="scaleAspectFit" id="Czn-Yr-xPV"/>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="iGw-PB-wMf"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="image" destination="Czn-Yr-xPV" id="0pA-yE-jTi"/>
+                                        <outlet property="label" destination="iGw-PB-wMf" id="zfl-Bh-zMZ"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="Fuo-E2-2Eg" id="G1w-35-Dvi"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
