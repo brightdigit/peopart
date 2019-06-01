@@ -50,7 +50,7 @@ Sample iOS and watchOS application
 
 ### Concepts
 
-* [JSONDecoder.dateDecodingStrategy]
+* [JSONDecoder.dateDecodingStrategy] : `"yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"`
 * Protocol-Oriented Programming
 * Functional Programming (map, reduce, sorting, max, etc...)
 * Application Transport Security
