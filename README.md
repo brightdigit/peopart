@@ -34,13 +34,13 @@ Sample iOS and watchOS application
 * [Codable] protocol for easy JSON decoding
 * [Delegation] pattern and how it is used with [UITableViewController]
 * Basics of [Model-View-Controller] pattern
-* Concept of [Optionals] and how to work with them
+* Concept of [Optionals] and [Optional Chaining] and how to work with them
 * How to throw and catch [Errors] in Swift
 
 ### Tasks
 
 * Parse bundled json file using [Codable] into a set of [structs]
-* Create a custom [UITableViewCell] and understand how to use `@IBOutlet`
+* Create a custom [UITableViewCell] and understand how to use `[@IBOutlet]`
 * Display the list of users from the JSON file into the `UsersTableViewController`
 * Understand the basics of updating the user interface and the `main` thread
 
@@ -76,3 +76,16 @@ Sample iOS and watchOS application
 * Setup Application Transport Security
 
 [Delegation]: https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Delegation.html
+[UITableViewController]: https://developer.apple.com/documentation/uikit/uitableviewcontroller
+[Bundle]: https://developer.apple.com/documentation/foundation/bundle
+[Data]: https://developer.apple.com/documentation/foundation/data
+[Codable]: https://developer.apple.com/documentation/swift/codable
+[Model-View-Controller]: https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/MVC.html
+[Optional Chaining]: https://docs.swift.org/swift-book/LanguageGuide/OptionalChaining.html
+[Optionals]: https://developer.apple.com/documentation/swift/optional
+[Errors]: https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html
+[sturcts]: https://docs.swift.org/swift-book/LanguageGuide/ClassesAndStructures.html
+[UITableViewCell]: https://developer.apple.com/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table
+[@IBOutlet]: https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Outlets/Outlets.html
+[JSON.dateDecodingStrategy]: https://developer.apple.com/documentation/foundation/jsondecoder/2895216-datedecodingstrategy
+[Protocol-Oriented Programming]: https://developer.apple.com/videos/play/wwdc2015/408/
