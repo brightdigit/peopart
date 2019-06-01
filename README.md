@@ -75,6 +75,12 @@ Sample iOS and watchOS application
 * Basic Functional Programming
 * Setup Application Transport Security
 
+## Step 4 - Apple Watch App Setup
+
+### Tasks
+
+* Setup a menu for displaying users and posts
+
 [Delegation]: https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Delegation.html
 [UITableViewController]: https://developer.apple.com/documentation/uikit/uitableviewcontroller
 [Bundle]: https://developer.apple.com/documentation/foundation/bundle
