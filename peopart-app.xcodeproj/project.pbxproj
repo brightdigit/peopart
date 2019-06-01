@@ -23,6 +23,7 @@
 		B358559622A2C18D00D7B7E0 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B358559522A2C18D00D7B7E0 /* UsersTableViewCell.swift */; };
 		B358559922A2C88500D7B7E0 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B358559722A2C88100D7B7E0 /* DataSource.swift */; };
 		B358559A22A2C88500D7B7E0 /* DataSourceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B358559822A2C88400D7B7E0 /* DataSourceError.swift */; };
+		B358559C22A2C9DF00D7B7E0 /* PostsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B358559B22A2C9DF00D7B7E0 /* PostsTableViewCell.xib */; };
 		B3F89E0D22A05B7600391807 /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F89E0A22A05B7500391807 /* UIWindow.swift */; };
 		B3F89E0E22A05B7600391807 /* TabItemable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F89E0B22A05B7500391807 /* TabItemable.swift */; };
 		B3F89E0F22A05B7600391807 /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F89E0C22A05B7600391807 /* UITabBarController.swift */; };
@@ -102,6 +103,7 @@
 		B358559522A2C18D00D7B7E0 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 		B358559722A2C88100D7B7E0 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		B358559822A2C88400D7B7E0 /* DataSourceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSourceError.swift; sourceTree = "<group>"; };
+		B358559B22A2C9DF00D7B7E0 /* PostsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostsTableViewCell.xib; sourceTree = "<group>"; };
 		B3F89E0A22A05B7500391807 /* UIWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindow.swift; sourceTree = "<group>"; };
 		B3F89E0B22A05B7500391807 /* TabItemable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItemable.swift; sourceTree = "<group>"; };
 		B3F89E0C22A05B7600391807 /* UITabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 		B3F92A7F22A06BE700C36269 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B358559B22A2C9DF00D7B7E0 /* PostsTableViewCell.xib */,
 				B3F92A8022A06BE700C36269 /* UsersTableViewCell.xib */,
 				B358559522A2C18D00D7B7E0 /* UsersTableViewCell.swift */,
 			);
@@ -334,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3F92A8122A06BE700C36269 /* UsersTableViewCell.xib in Resources */,
+				B358559C22A2C9DF00D7B7E0 /* PostsTableViewCell.xib in Resources */,
 				B3F92A7322A06AD800C36269 /* db.json in Resources */,
 				B302E5C222A048B200D573F2 /* LaunchScreen.storyboard in Resources */,
 				B302E5BF22A048B200D573F2 /* Assets.xcassets in Resources */,
