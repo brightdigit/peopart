@@ -13,12 +13,34 @@ Sample iOS and watchOS application
   * [UIAppDelegate](https://developer.apple.com/documentation/uikit/uiapplicationdelegate)
     * **Description**
       * Handles the various states and outside entry points into the application  
-    * **Methods**
+    * **Properties and Methods**
       * [application(_:willFinishLaunchingWithOptions:)](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1623032-application) 
         Setup the `UIWindow` for the `main` `UIScreen` with the root `UIViewController` 
   * [UIWindow](https://developer.apple.com/documentation/uikit/uiwindow)
+    * **Description**
+      * Backdrop of the UI 
+    * **Properties and Methods**
+      * [init(frame:)](https://developer.apple.com/documentation/uikit/uiwindow)
+        Setup a new `UIWindow` based on the `UIScreen`
+      * [rootViewController](https://developer.apple.com/documentation/uikit/uiwindow/1621581-rootviewcontroller)
+        The root `UIViewController` 
+      * [makeKeyAndVisible()]
+        Make the `UIWindow` key and visible
+  * [UIScreen](https://developer.apple.com/documentation/uikit/uiscreen)
+    * **Description**
+      * Properties associated with a hardware-display
+    * **Properties and Methods**
+      * [main] 
+        the main screen of the device
   * [UIViewController](https://developer.apple.com/documentation/uikit/uiviewcontroller)
+    * **Description**
+      * Base View Controller 
   * [UITabBarController](https://developer.apple.com/documentation/uikit/uitabbarcontroller)
+    * **Description**
+      * `UIViewController` which contains a series of bottom tabs
+    * **Properties and Methods**
+      * [setViewControllers(, animated: Bool)] 
+        Set the `UIViewController` for each tab
   * [UINavigationController](https://developer.apple.com/documentation/uikit/uinavigationcontroller)
   * [UITableViewController](https://developer.apple.com/documentation/uikit/uitableviewcontroller)
 
