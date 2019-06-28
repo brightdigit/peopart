@@ -24,13 +24,13 @@ Sample iOS and watchOS application
         Setup a new `UIWindow` based on the `UIScreen`
       * [rootViewController](https://developer.apple.com/documentation/uikit/uiwindow/1621581-rootviewcontroller)
         The root `UIViewController` 
-      * [makeKeyAndVisible()]
+      * [makeKeyAndVisible()](https://developer.apple.com/documentation/uikit/uiwindow/1621601-makekeyandvisible)
         Make the `UIWindow` key and visible
   * [UIScreen](https://developer.apple.com/documentation/uikit/uiscreen)
     * **Description**
       * Properties associated with a hardware-display
     * **Properties and Methods**
-      * [main] 
+      * [main](https://developer.apple.com/documentation/uikit/uiscreen/1617815-main)
         the main screen of the device
   * [UIViewController](https://developer.apple.com/documentation/uikit/uiviewcontroller)
     * **Description**
@@ -39,9 +39,14 @@ Sample iOS and watchOS application
     * **Description**
       * `UIViewController` which contains a series of bottom tabs
     * **Properties and Methods**
-      * [setViewControllers(, animated: Bool)] 
+      * [setViewControllers(, animated: Bool)](https://developer.apple.com/documentation/uikit/uitabbarcontroller/1621177-setviewcontrollers)
         Set the `UIViewController` for each tab
   * [UINavigationController](https://developer.apple.com/documentation/uikit/uinavigationcontroller)
+    * **Description**
+      * `UIViewController` for allowing tree-like navigation
+    * **Properties and Methods**
+      * [init(rootViewController:)](https://developer.apple.com/documentation/uikit/uinavigationcontroller/1621858-init)
+        Creates and new `UINavigationController` with a the designated `rootViewController`
   * [UITableViewController](https://developer.apple.com/documentation/uikit/uitableviewcontroller)
 
 ### Tasks
