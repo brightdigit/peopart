@@ -100,13 +100,13 @@ git checkout feature/step-1
     * **Description**
       * a `UIView` for representing rows of data
     * **Properties and Methods** 
-    * [register(_ nib: UINib?, 
+      * [register(_ nib: UINib?, 
     forCellReuseIdentifier identifier: String)](https://developer.apple.com/documentation/uikit/uitableview/1614937-register)
         * registers a `UINib` of the cell to be used throughout the `UITableView`
-    * [reloadData()](https://developer.apple.com/documentation/uikit/uitableview/1614862-reloaddata)
+      * [reloadData()](https://developer.apple.com/documentation/uikit/uitableview/1614862-reloaddata)
         * basic method for reloading `UITableView` rows 
         * _Note_ there are preffered methods of doing this such as reloadRows or [performBatchUpdates](https://developer.apple.com/documentation/uikit/uitableview/2887515-performbatchupdates)
-    * [dataSource]
+      * [dataSource](https://developer.apple.com/documentation/uikit/uitableview/1614955-datasource)
         * property which defines the `UITableViewDataSource` of the `UITableView`
   * [UITableViewDataSource]
     * **Description**
