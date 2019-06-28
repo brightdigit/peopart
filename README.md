@@ -146,7 +146,11 @@ git checkout feature/step-3
 
 ### Tasks
 
+* Using a Storyboards to customize the UI of the main [WKInterfaceController]
 * Setup a menu for displaying users and posts
+* Dynamically display a different sets of data into a [WKInterfaceTable]
+* Push and pass context to a new [WKInterfaceController]
+
 
 [Delegation]: https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Delegation.html
 [UITableViewController]: https://developer.apple.com/documentation/uikit/uitableviewcontroller
@@ -161,4 +165,6 @@ git checkout feature/step-3
 [UITableViewCell]: https://developer.apple.com/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table
 [IBOutlet]: https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Outlets/Outlets.html
 [JSONDecoder.dateDecodingStrategy]: https://developer.apple.com/documentation/foundation/jsondecoder/2895216-datedecodingstrategy
+[WKInterfaceTable]: https://developer.apple.com/documentation/watchkit/wkinterfacetable
 [Protocol-Oriented Programming]: https://developer.apple.com/videos/play/wwdc2015/408/
+[WKInterfaceController]: https://developer.apple.com/documentation/watchkit/wkinterfacecontroller

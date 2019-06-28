@@ -10,7 +10,7 @@ import WatchKit
 import Foundation
 
 class InterfaceController: WKInterfaceController {
-  var dataType : DataFetcher = MenuItemFetcher()
+  var dataType : DataFetcher? = MenuItemFetcher()
   var items : [MenuItem]? = nil
   
   @IBOutlet weak var table: WKInterfaceTable!
@@ -23,7 +23,7 @@ class InterfaceController: WKInterfaceController {
     }
     
     // Configure interface objects here.
-    dataType.fetch { (result) in
+    dataType?.fetch { (result) in
       self.items = try? result.get()
       DispatchQueue.main.async {
         self.reload()
