@@ -16,14 +16,9 @@ struct Database : DatabaseProtocol {
   public static let shared: DatabaseProtocol = try! Database()
   
   private init (source: DataSource = defaultSource) throws {
-    
     let dbData = try source.getData()
     let jsonDecoder = JSONDecoder()
-    jsonDecoder.dateDecodingStrategy = .formatted({
-      let formatter = DateFormatter()
-      formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"
-      return formatter
-      }())
+    jsonDecoder.dateDecodingStrategy = .formatted(.custom)
     let tables = try jsonDecoder.decode(Dataset.self, from: dbData)
     self.dataset = tables
   }

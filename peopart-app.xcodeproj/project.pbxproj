@@ -61,6 +61,8 @@
 		B3F92AAD22A1B0D900C36269 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F92A9622A0A8BD00C36269 /* DataSource.swift */; };
 		B3F92AAE22A1B0D900C36269 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F92A9022A09A5400C36269 /* Database.swift */; };
 		B3F92AAF22A1B0D900C36269 /* DataSourceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F92A9822A0A8D500C36269 /* DataSourceError.swift */; };
+		B3F976DA22C69B980083BA73 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F976D922C69B980083BA73 /* DateFormatter.swift */; };
+		B3F976DB22C69C470083BA73 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F976D922C69B980083BA73 /* DateFormatter.swift */; };
 		B3F9B30A22C68F250022B48E /* AnyPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FF8A3F22C3CB41007E006F /* AnyPost.swift */; };
 		B3FF8A4622C3CB42007E006F /* DataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FF8A3E22C3CB41007E006F /* DataFetcher.swift */; };
 		B3FF8A4722C3CB42007E006F /* AnyPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FF8A3F22C3CB41007E006F /* AnyPost.swift */; };
@@ -153,6 +155,7 @@
 		B3F92A9F22A1AD3100C36269 /* CommentProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentProtocol.swift; sourceTree = "<group>"; };
 		B3F92AA122A1AE8C00C36269 /* UserEmbeddedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEmbeddedProtocol.swift; sourceTree = "<group>"; };
 		B3F92AA422A1AF7200C36269 /* PostEmbeddedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEmbeddedProtocol.swift; sourceTree = "<group>"; };
+		B3F976D922C69B980083BA73 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		B3FF8A3E22C3CB41007E006F /* DataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFetcher.swift; sourceTree = "<group>"; };
 		B3FF8A3F22C3CB41007E006F /* AnyPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyPost.swift; sourceTree = "<group>"; };
 		B3FF8A4022C3CB41007E006F /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
@@ -277,6 +280,7 @@
 				B3EF16E122A1EC6600543115 /* UserEmbedded.swift */,
 				B3FF8A3F22C3CB41007E006F /* AnyPost.swift */,
 				B3EF16E422A1EE8A00543115 /* PostEmbedded.swift */,
+				B3F976D922C69B980083BA73 /* DateFormatter.swift */,
 			);
 			path = "peopart-data";
 			sourceTree = "<group>";
@@ -431,6 +435,7 @@
 				B3F89E0E22A05B7600391807 /* TabItemable.swift in Sources */,
 				B3F92A8322A06C5400C36269 /* DatabaseProtocol.swift in Sources */,
 				B3F92AA522A1AF7200C36269 /* PostEmbeddedProtocol.swift in Sources */,
+				B3F976DA22C69B980083BA73 /* DateFormatter.swift in Sources */,
 				B3F89E0F22A05B7600391807 /* UITabBarController.swift in Sources */,
 				B3F92A9E22A1AD1D00C36269 /* PostProtocol.swift in Sources */,
 				B3EF16E222A1EC6600543115 /* UserEmbedded.swift in Sources */,
@@ -466,6 +471,7 @@
 				B3F92A9C22A173F600C36269 /* Dataset.swift in Sources */,
 				B3F92A8422A06C5400C36269 /* DatabaseProtocol.swift in Sources */,
 				B3F92AAF22A1B0D900C36269 /* DataSourceError.swift in Sources */,
+				B3F976DB22C69C470083BA73 /* DateFormatter.swift in Sources */,
 				B3F92A8A22A06D9500C36269 /* User.swift in Sources */,
 				B3FF8A4622C3CB42007E006F /* DataFetcher.swift in Sources */,
 				B3FF8A4822C3CB42007E006F /* MenuItem.swift in Sources */,
