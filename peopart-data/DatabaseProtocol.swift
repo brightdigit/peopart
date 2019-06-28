@@ -9,10 +9,19 @@
 import Foundation
 
 /**
- Based Protocol for Accessing Data
- **/
-public protocol DatabaseProtocol {
-  
+ Database Protocol
+ */
+protocol DatabaseProtocol {
+  /**
+    Shared Database for Application.
+  */
   static var shared : DatabaseProtocol { get }
+  
+  /**
+   Asyncronous method for attempting to fetch the list of users.
+   
+   - Parameter completion: callback which takes a Result of either the list of users or the error.
+   
+   */
   func users (_ completion: @escaping (Result<[UserProtocol], Error>) -> Void)  
 }

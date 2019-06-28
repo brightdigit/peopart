@@ -8,6 +8,9 @@
 
 import Foundation
 
-public struct User {
+/**
+ User data structure.
+ */
+struct User {
   
 }

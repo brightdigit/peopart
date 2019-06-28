@@ -8,6 +8,9 @@
 
 import Foundation
 
+/**
+ User Protocol.
+ */
 public protocol UserProtocol {
   
 }
