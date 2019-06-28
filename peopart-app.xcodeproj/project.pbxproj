@@ -37,6 +37,14 @@
 		B3F92A8722A06C7000C36269 /* UserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F92A8522A06C7000C36269 /* UserProtocol.swift */; };
 		B3F92A8922A06D9500C36269 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F92A8822A06D9500C36269 /* User.swift */; };
 		B3F92A8A22A06D9500C36269 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F92A8822A06D9500C36269 /* User.swift */; };
+		B3F92A9122A09A5400C36269 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F92A9022A09A5400C36269 /* Database.swift */; };
+		B3F92A9922A0A8D500C36269 /* DataSourceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F92A9822A0A8D500C36269 /* DataSourceError.swift */; };
+		B3F92A9C22A173F600C36269 /* Dataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F92A9A22A173F300C36269 /* Dataset.swift */; };
+		B3F92AAD22A1B0D900C36269 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F92A9622A0A8BD00C36269 /* DataSource.swift */; };
+		B3F92AAE22A1B0D900C36269 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F92A9022A09A5400C36269 /* Database.swift */; };
+		B3F92AAF22A1B0D900C36269 /* DataSourceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F92A9822A0A8D500C36269 /* DataSourceError.swift */; };
+		B3F976DA22C69B980083BA73 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F976D922C69B980083BA73 /* DateFormatter.swift */; };
+		B3F976DB22C69C470083BA73 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F976D922C69B980083BA73 /* DateFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +106,7 @@
 		B302E5E022A048B300D573F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B302E5E222A048B300D573F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B302E5E322A048B300D573F2 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B345374922A19B6500FE9C39 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B358559122A2BB9D00D7B7E0 /* Dataset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dataset.swift; sourceTree = "<group>"; };
 		B358559322A2BBEB00D7B7E0 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		B358559522A2C18D00D7B7E0 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
@@ -113,7 +122,12 @@
 		B3F92A8222A06C5400C36269 /* DatabaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProtocol.swift; sourceTree = "<group>"; };
 		B3F92A8522A06C7000C36269 /* UserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProtocol.swift; sourceTree = "<group>"; };
 		B3F92A8822A06D9500C36269 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		B3F976D822C69AFB0083BA73 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B3F92A9022A09A5400C36269 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		B3F92A9222A09E4000C36269 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
+		B3F92A9622A0A8BD00C36269 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		B3F92A9822A0A8D500C36269 /* DataSourceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceError.swift; sourceTree = "<group>"; };
+		B3F92A9A22A173F300C36269 /* Dataset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dataset.swift; sourceTree = "<group>"; };
+		B3F976D922C69B980083BA73 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +151,7 @@
 		B302E5AB22A048B000D573F2 = {
 			isa = PBXGroup;
 			children = (
-				B3F976D822C69AFB0083BA73 /* README.md */,
+				B345374922A19B6500FE9C39 /* README.md */,
 				B3F92A7122A06AD800C36269 /* peopart-data */,
 				B302E5B622A048B000D573F2 /* peopart-app */,
 				B302E5CA22A048B200D573F2 /* peopart-app WatchKit App */,
@@ -216,12 +230,17 @@
 			children = (
 				B358559722A2C88100D7B7E0 /* DataSource.swift */,
 				B358559822A2C88400D7B7E0 /* DataSourceError.swift */,
-				B3F92A7222A06AD800C36269 /* db.json */,
+				B3F92A9022A09A5400C36269 /* Database.swift */,
 				B3F92A8222A06C5400C36269 /* DatabaseProtocol.swift */,
-				B3F92A8522A06C7000C36269 /* UserProtocol.swift */,
+				B3F92A9A22A173F300C36269 /* Dataset.swift */,
+				B3F92A9622A0A8BD00C36269 /* DataSource.swift */,
+				B3F92A9822A0A8D500C36269 /* DataSourceError.swift */,
+				B3F92A7222A06AD800C36269 /* db.json */,
 				B3F92A8822A06D9500C36269 /* User.swift */,
 				B358559122A2BB9D00D7B7E0 /* Dataset.swift */,
 				B358559322A2BBEB00D7B7E0 /* Database.swift */,
+				B3F92A8522A06C7000C36269 /* UserProtocol.swift */,
+				B3F976D922C69B980083BA73 /* DateFormatter.swift */,
 			);
 			path = "peopart-data";
 			sourceTree = "<group>";
@@ -232,6 +251,7 @@
 				B358559B22A2C9DF00D7B7E0 /* PostsTableViewCell.xib */,
 				B3F92A8022A06BE700C36269 /* UsersTableViewCell.xib */,
 				B358559522A2C18D00D7B7E0 /* UsersTableViewCell.swift */,
+				B3F92A9222A09E4000C36269 /* UsersTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -373,15 +393,18 @@
 			files = (
 				B3F89E0E22A05B7600391807 /* TabItemable.swift in Sources */,
 				B3F92A8322A06C5400C36269 /* DatabaseProtocol.swift in Sources */,
+				B3F976DA22C69B980083BA73 /* DateFormatter.swift in Sources */,
 				B3F89E0F22A05B7600391807 /* UITabBarController.swift in Sources */,
 				B358559222A2BB9D00D7B7E0 /* Dataset.swift in Sources */,
 				B358559A22A2C88500D7B7E0 /* DataSourceError.swift in Sources */,
+				B3F92A9922A0A8D500C36269 /* DataSourceError.swift in Sources */,
 				B302E5B822A048B000D573F2 /* AppDelegate.swift in Sources */,
 				B3F92A8922A06D9500C36269 /* User.swift in Sources */,
 				B358559922A2C88500D7B7E0 /* DataSource.swift in Sources */,
 				B3F89E1122A05BA900391807 /* UsersTableViewController.swift in Sources */,
 				B3F89E0D22A05B7600391807 /* UIWindow.swift in Sources */,
 				B358559422A2BBEB00D7B7E0 /* Database.swift in Sources */,
+				B3F92A9122A09A5400C36269 /* Database.swift in Sources */,
 				B3F92A8622A06C7000C36269 /* UserProtocol.swift in Sources */,
 				B358559622A2C18D00D7B7E0 /* UsersTableViewCell.swift in Sources */,
 			);
@@ -392,10 +415,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B302E5DF22A048B300D573F2 /* NotificationController.swift in Sources */,
+				B3F92A9C22A173F600C36269 /* Dataset.swift in Sources */,
 				B3F92A8422A06C5400C36269 /* DatabaseProtocol.swift in Sources */,
+				B3F92AAF22A1B0D900C36269 /* DataSourceError.swift in Sources */,
+				B3F976DB22C69C470083BA73 /* DateFormatter.swift in Sources */,
 				B3F92A8A22A06D9500C36269 /* User.swift in Sources */,
+				B3F92AAD22A1B0D900C36269 /* DataSource.swift in Sources */,
 				B302E5DD22A048B300D573F2 /* ExtensionDelegate.swift in Sources */,
 				B3F92A8722A06C7000C36269 /* UserProtocol.swift in Sources */,
+				B3F92AAE22A1B0D900C36269 /* Database.swift in Sources */,
 				B302E5DB22A048B300D573F2 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

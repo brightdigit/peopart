@@ -90,6 +90,7 @@ git checkout feature/step-1
 * Reading a file from the Application [Bundle] using the [Data] type
 * [Codable] protocol for easy JSON decoding
 * [Delegation] pattern and how it is used with [UITableViewController]
+<<<<<<< HEAD
   * [UITableViewController](https://developer.apple.com/documentation/uikit/uitableviewcontroller)
     * **Description**
       * a `UIViewController` which encapsulates a `UITableView`, `UITableViewDataSource`, `UITableViewDelegate`
@@ -118,6 +119,8 @@ git checkout feature/step-1
         * defines the number of rows in a particular section for the `UITableView`
       * [tableView(_:cellForRowAt:)](https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614861-tableview)
         * returns the `UITableViewCell` for the particular row and section of the `UITableView`
+=======
+>>>>>>> feature/step-3
 * Basics of [Model-View-Controller] pattern
 * Concept of [Optionals] and [Optional Chaining] and how to work with them
 * How to throw and catch [Errors] in Swift
@@ -125,7 +128,11 @@ git checkout feature/step-1
 ### Tasks
 
 * Parse bundled json file using [Codable] into a set of [structs]
+<<<<<<< HEAD
 * Create and register a custom [UITableViewCell] and understand how to use [IBOutlet]
+=======
+* Create a custom [UITableViewCell] and understand how to use [IBOutlet]
+>>>>>>> feature/step-3
 * Display the list of users from the JSON file into the `UsersTableViewController`
 * Understand the basics of updating the user interface and the `main` thread
 
@@ -196,5 +203,8 @@ git checkout feature/step-3
 [WKInterfaceTable]: https://developer.apple.com/documentation/watchkit/wkinterfacetable
 [Protocol-Oriented Programming]: https://developer.apple.com/videos/play/wwdc2015/408/
 [WKInterfaceController]: https://developer.apple.com/documentation/watchkit/wkinterfacecontroller
+<<<<<<< HEAD
 [UITableView]: https://developer.apple.com/documentation/uikit/uitableview
 [UITableViewDataSource]: https://developer.apple.com/documentation/uikit/uitableviewdatasource
+=======
+>>>>>>> feature/step-3
