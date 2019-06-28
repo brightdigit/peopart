@@ -114,9 +114,9 @@ git checkout feature/step-1
     * **Properties and Methods** 
       * [numberOfSections(in:)](https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614860-numberofsections)
         * defines the number of sections in the `UITableView`
-        * [tableView(_:numberOfRowsInSection:)](https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614931-tableview)
+      * [tableView(_:numberOfRowsInSection:)](https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614931-tableview)
         * defines the number of rows in a particular section for the `UITableView`
-        * [tableView(_:cellForRowAt:)](https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614861-tableview)
+      * [tableView(_:cellForRowAt:)](https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614861-tableview)
         * returns the `UITableViewCell` for the particular row and section of the `UITableView`
 * Basics of [Model-View-Controller] pattern
 * Concept of [Optionals] and [Optional Chaining] and how to work with them
