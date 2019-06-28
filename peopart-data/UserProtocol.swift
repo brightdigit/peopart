@@ -8,9 +8,24 @@
 
 import Foundation
 
+/**
+ User Protocol.
+ */
 public protocol UserProtocol {
+  /**
+   User id.
+   */
   var id : UUID { get }
+  /**
+   User name.
+   */
   var name : String { get }
+  /**
+   User avatar image url.
+   */
   var avatar : URL { get }
+  /**
+   User badge.
+   */
   var badge : String { get }
 }

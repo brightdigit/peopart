@@ -13,8 +13,15 @@ struct Database : DatabaseProtocol {
   let dataset : Dataset
   
   public static let defaultSource : DataSource = .bundle(Bundle.main, withResource: "db", andExtension: "json")
+  
   public static let shared: DatabaseProtocol = try! Database()
   
+  /**
+   Creates a Database to pull users, posts, and comments form.
+   
+   - Parameter source: optional `DataSource` which defines where to pull the data from
+   
+   */
   private init (source: DataSource = defaultSource) throws {
     let dbData = try source.getData()
     let jsonDecoder = JSONDecoder()
@@ -23,9 +30,13 @@ struct Database : DatabaseProtocol {
     self.dataset = tables
   }
   
+  /**
+   Asyncronous method for attempting to fetch the list of users.
+   
+   - Parameter completion: callback which takes a Result of either the list of users or the error.
+   
+   */
   public func users(_ completion: @escaping (Result<[UserEmbeddedProtocol], Error>) -> Void) {
-    // sort by active users
-    // add all posts of the users
     DispatchQueue.global().async {
       
       let postDictionary = [UUID : [Post]](grouping: self.dataset.posts, by: { (post) -> UUID in
@@ -48,6 +59,11 @@ struct Database : DatabaseProtocol {
     
   }
   
+  /**
+   Asyncronous method for attempting to fetch the list of posts.
+   
+   - Parameter completion: callback which takes a Result of either the list of posts or the error.
+   */
   func posts(_ completion: @escaping (Result<[PostEmbeddedProtocol], Error>) -> Void) {
     DispatchQueue.global().async {
       let commentDictionary = [UUID : [Comment]](grouping: self.dataset.comments, by: { (comment) -> UUID in

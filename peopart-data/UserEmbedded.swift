@@ -7,8 +7,16 @@
 //
 
 import Foundation
-
+/**
+ User with embedded linked data.
+ */
 struct UserEmbedded : UserEmbeddedProtocol {
+  /**
+    Primary User Data.
+  */
   let user: UserProtocol
+  /**
+   List of the user's posts.
+   */
   let posts: [PostProtocol]
 }

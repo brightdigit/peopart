@@ -8,12 +8,24 @@
 
 import Foundation
 
+/**
+ Protocol for User with embedded linked data.
+ */
 protocol UserEmbeddedProtocol {
+  /**
+   Primary User Data.
+   */
   var user : UserProtocol { get }
+  /**
+   List of the user's posts.
+   */
   var posts : [PostProtocol] { get }
 }
 
 extension UserEmbeddedProtocol {
+  /**
+   String representing summary data for the post.
+   */
   var summary : String {
     let post = posts.max { (lhs, rhs) -> Bool in
       return lhs.date > rhs.date

@@ -8,8 +8,27 @@
 
 import Foundation
 
+/**
+ Database Protocol
+ */
 protocol DatabaseProtocol {
+  /**
+    Shared Database for Application.
+  */
   static var shared : DatabaseProtocol { get }
+  
+  /**
+   Asyncronous method for attempting to fetch the list of users.
+   
+   - Parameter completion: callback which takes a Result of either the list of users or the error.
+   
+   */
   func users (_ completion: @escaping (Result<[UserEmbeddedProtocol], Error>) -> Void)
+  
+  /**
+   Asyncronous method for attempting to fetch the list of posts.
+   
+   - Parameter completion: callback which takes a Result of either the list of posts or the error.
+   */
   func posts (_ completion: @escaping (Result<[PostEmbeddedProtocol], Error>) -> Void)
 }
