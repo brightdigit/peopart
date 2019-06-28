@@ -5,6 +5,12 @@ Sample iOS and watchOS application
 
 ## Step 1 - Setup UI Navigation Structure
 
+To begin working on this step: 
+
+```bash
+git checkout master
+```
+
 ### Concepts
 
 * Understand Basic Swift Syntax
@@ -51,8 +57,19 @@ Sample iOS and watchOS application
 
 ### Tasks
 
-* Display a single tab for listing users (no items needed yet)
 * Create a class for listing users by subclassing UITableViewController
+  * _Hints_ 
+    * create a new _Cocoa Touch Class_ subclass of `UITableViewController` called `UsersTableViewController`
+    
+* Display a single tab for listing users (no items needed yet)
+  * _Hints_ * in `application(_:willFinishLaunchingWithOptions:)`... create a `UIWindow` with the size of the `main` `UIScreen`   
+    * ... create a `UINavigationController` with a `rootViewController` of `UsersTableViewController`
+    * ... create a `UITabBarController` with our new `UINavigationController`
+    * ... set the `rootViewController` of the new `UIWindow` to our new `UITabBarController`
+    * ... make the new `UIWindow` key and visible
+    * ... set the `window` property to the newly created `UIWindow`
+    * ... return `true`
+    
 
 *Optional*
 
@@ -61,6 +78,12 @@ Sample iOS and watchOS application
 ![What the end of step 1 should look like](/assets/step-1.jpg?raw=true "Step 1 Result")
 
 ## Step 2 - Parse and Display Data
+
+To skip ahead and begin working on this step: 
+
+```bash
+git checkout feature/step-1
+```
 
 ### Concepts
 
@@ -81,6 +104,12 @@ Sample iOS and watchOS application
 ![What the end of step 2 should look like](/assets/step-2.jpg?raw=true "Step 2 Result")
 
 ## Step 3 - Display More Complex Data
+
+To skip ahead and begin working on this step: 
+
+```bash
+git checkout feature/step-2
+```
 
 ### Concepts
 
@@ -110,6 +139,10 @@ Sample iOS and watchOS application
 * Setup Application Transport Security
 
 ## Step 4 - Apple Watch App Setup
+
+```bash
+git checkout feature/step-3
+```
 
 ### Tasks
 
