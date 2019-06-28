@@ -8,20 +8,33 @@
 
 import Foundation
 
-public struct Database : DatabaseProtocol {
+struct Database : DatabaseProtocol {
+  
   let dataset : Dataset
   
   public static let defaultSource : DataSource = .bundle(Bundle.main, withResource: "db", andExtension: "json")
+  
   public static let shared: DatabaseProtocol = try! Database()
   
+  /**
+   Creates a Database to pull users, posts, and comments form.
+   
+   - Parameter source: optional `DataSource` which defines where to pull the data from
+   
+   */
   private init (source: DataSource = defaultSource) throws {
-    
     let dbData = try source.getData()
     let jsonDecoder = JSONDecoder()
     let tables = try jsonDecoder.decode(Dataset.self, from: dbData)
     self.dataset = tables
   }
   
+  /**
+   Asyncronous method for attempting to fetch the list of users.
+   
+   - Parameter completion: callback which takes a Result of either the list of users or the error.
+   
+   */
   public func users(_ completion: @escaping (Result<[UserProtocol], Error>) -> Void) {
     completion(.success(self.dataset.users))
   }

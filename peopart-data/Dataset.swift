@@ -8,6 +8,12 @@
 
 import Foundation
 
+/**
+  Codable structure based on the JSON data.
+ */
 public struct Dataset : Codable {
+  /**
+   List of users in the dataset.
+   */
   let users : [User]
 }

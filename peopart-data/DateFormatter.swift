@@ -18,6 +18,9 @@ fileprivate let _customDateFormatter : DateFormatter = {
 }(dateFormatString)
 
 extension DateFormatter {
+  /**
+    DateFormatter for Application.
+  */
   static var custom : DateFormatter {
     return _customDateFormatter
   }

@@ -8,6 +8,12 @@
 
 import Foundation
 
+/**
+ Error enum for when there is no url for the resource.
+ */
 public enum DataSourceError : Error {
+  /**
+   Error enum for when there is no url for the resource.
+   */
   case missingResource(Bundle, withResource: String?, andExtension: String?)
 }
