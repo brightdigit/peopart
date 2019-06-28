@@ -101,6 +101,7 @@
 		B3F92A8222A06C5400C36269 /* DatabaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProtocol.swift; sourceTree = "<group>"; };
 		B3F92A8522A06C7000C36269 /* UserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProtocol.swift; sourceTree = "<group>"; };
 		B3F92A8822A06D9500C36269 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B3F976D722C694630083BA73 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +125,7 @@
 		B302E5AB22A048B000D573F2 = {
 			isa = PBXGroup;
 			children = (
+				B3F976D722C694630083BA73 /* README.md */,
 				B3F92A7122A06AD800C36269 /* peopart-data */,
 				B302E5B622A048B000D573F2 /* peopart-app */,
 				B302E5CA22A048B200D573F2 /* peopart-app WatchKit App */,

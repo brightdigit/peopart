@@ -90,6 +90,34 @@ git checkout feature/step-1
 * Reading a file from the Application [Bundle] using the [Data] type
 * [Codable] protocol for easy JSON decoding
 * [Delegation] pattern and how it is used with [UITableViewController]
+  * [UITableViewController](https://developer.apple.com/documentation/uikit/uitableviewcontroller)
+    * **Description**
+      * a `UIViewController` which encapsulates a `UITableView`, `UITableViewDataSource`, `UITableViewDelegate`
+    * **Properties and Methods**
+      * [tableView](https://developer.apple.com/documentation/uikit/uitableviewcontroller/1614753-tableview)
+        * the `UITableView` managed by the `UITableViewController`
+  * [UITableView]
+    * **Description**
+      * a `UIView` for representing rows of data
+    * **Properties and Methods** 
+    * [register(_ nib: UINib?, 
+    forCellReuseIdentifier identifier: String)](https://developer.apple.com/documentation/uikit/uitableview/1614937-register)
+        * registers a `UINib` of the cell to be used throughout the `UITableView`
+    * [reloadData()](https://developer.apple.com/documentation/uikit/uitableview/1614862-reloaddata)
+        * basic method for reloading `UITableView` rows 
+        * _Note_ there are preffered methods of doing this such as reloadRows or [performBatchUpdates](https://developer.apple.com/documentation/uikit/uitableview/2887515-performbatchupdates)
+    * [dataSource]
+        * property which defines the `UITableViewDataSource` of the `UITableView`
+  * [UITableViewDataSource]
+    * **Description**
+      * a protocol which returns the data and cells for a `UITableView`
+    * **Properties and Methods** 
+      * [numberOfSections(in:)](https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614860-numberofsections)
+        * defines the number of sections in the `UITableView`
+        * [tableView(_:numberOfRowsInSection:)](https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614931-tableview)
+        * defines the number of rows in a particular section for the `UITableView`
+        * [tableView(_:cellForRowAt:)](https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614861-tableview)
+        * returns the `UITableViewCell` for the particular row and section of the `UITableView`
 * Basics of [Model-View-Controller] pattern
 * Concept of [Optionals] and [Optional Chaining] and how to work with them
 * How to throw and catch [Errors] in Swift
@@ -97,7 +125,7 @@ git checkout feature/step-1
 ### Tasks
 
 * Parse bundled json file using [Codable] into a set of [structs]
-* Create a custom [UITableViewCell] and understand how to use [IBOutlet]
+* Create and register a custom [UITableViewCell] and understand how to use [IBOutlet]
 * Display the list of users from the JSON file into the `UsersTableViewController`
 * Understand the basics of updating the user interface and the `main` thread
 
@@ -146,7 +174,11 @@ git checkout feature/step-3
 
 ### Tasks
 
+* Using a Storyboards to customize the UI of the main [WKInterfaceController]
 * Setup a menu for displaying users and posts
+* Dynamically display a different sets of data into a [WKInterfaceTable]
+* Push and pass context to a new [WKInterfaceController]
+
 
 [Delegation]: https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Delegation.html
 [UITableViewController]: https://developer.apple.com/documentation/uikit/uitableviewcontroller
@@ -161,4 +193,8 @@ git checkout feature/step-3
 [UITableViewCell]: https://developer.apple.com/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table
 [IBOutlet]: https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Outlets/Outlets.html
 [JSONDecoder.dateDecodingStrategy]: https://developer.apple.com/documentation/foundation/jsondecoder/2895216-datedecodingstrategy
+[WKInterfaceTable]: https://developer.apple.com/documentation/watchkit/wkinterfacetable
 [Protocol-Oriented Programming]: https://developer.apple.com/videos/play/wwdc2015/408/
+[WKInterfaceController]: https://developer.apple.com/documentation/watchkit/wkinterfacecontroller
+[UITableView]: https://developer.apple.com/documentation/uikit/uitableview
+[UITableViewDataSource]: https://developer.apple.com/documentation/uikit/uitableviewdatasource

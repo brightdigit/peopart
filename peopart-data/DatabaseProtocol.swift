@@ -8,7 +8,11 @@
 
 import Foundation
 
+/**
+ Based Protocol for Accessing Data
+ **/
 public protocol DatabaseProtocol {
+  
   static var shared : DatabaseProtocol { get }
   func users (_ completion: @escaping (Result<[UserProtocol], Error>) -> Void)  
 }
