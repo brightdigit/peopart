@@ -10,28 +10,25 @@ import WatchKit
 import Foundation
 
 class InterfaceController: WKInterfaceController {
-  var dataType : DataType = ItemDataType()
-  var items : [DataItem]? = nil
+  var dataType : DataFetcher = MenuItemFetcher()
+  var items : [MenuItem]? = nil
+  
   @IBOutlet weak var table: WKInterfaceTable!
   
   override func awake(withContext context: Any?) {
     super.awake(withContext: context)
     
-    if let itemType = context as? DataItem, let dataType = itemType.dataType {
+    if let itemType = context as? MenuItem, let dataType = itemType.dataType {
       self.dataType = dataType
     }
     
-    
     // Configure interface objects here.
     dataType.fetch { (result) in
-      
       self.items = try? result.get()
       DispatchQueue.main.async {
         self.reload()
       }
-      
     }
-  
   }
   
   func reload () {
@@ -63,5 +60,4 @@ class InterfaceController: WKInterfaceController {
     
     item.controller(self, table : table, didSelectRowAt: rowIndex)
   }
-  
 }

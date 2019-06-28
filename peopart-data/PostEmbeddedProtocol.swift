@@ -8,8 +8,14 @@
 
 import Foundation
 
-protocol PostEmbeddedProtocol {
+protocol PostEmbeddedProtocol : AnyPost{
   var post : PostProtocol { get }
   var author : UserProtocol { get }
   var comments : [CommentProtocol] { get }
+}
+
+extension PostEmbeddedProtocol {
+  var title: String {
+    return post.title
+  }
 }

@@ -1,13 +1,13 @@
 import WatchKit
 
-class ItemType : NSObject, DataItem {
+class SelectionMenuItem : NSObject, MenuItem {
   
   let type : Int
-  let dataType: DataType?
+  let dataType: DataFetcher?
   
   init (type: Types) {
     self.type = type.rawValue
-    let dataType : DataType
+    let dataType : DataFetcher
     switch type {
     case .user:
       dataType = UserDataType()

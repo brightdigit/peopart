@@ -1,13 +1,14 @@
 import WatchKit
 
-class UserDataItem : NSObject, DataItem {
-  let dataType: DataType?
+class UserDataItem : NSObject, MenuItem {
+  let dataType: DataFetcher?
   let user: UserEmbeddedProtocol
   
   init (user: UserEmbeddedProtocol) {
     self.user = user
     self.dataType = PostDataType(data: .posts(user.posts))
   }
+  
   func controller(_ controller: WKInterfaceController, table: WKInterfaceTable, configureRowAtIndex index: Int) {
     guard let rowController = table.rowController(at: index) as? RowController else {
       return
@@ -20,7 +21,5 @@ class UserDataItem : NSObject, DataItem {
   func controller(_ controller: WKInterfaceController, table: WKInterfaceTable, didSelectRowAt index: Int) {
     controller.pushController(withName: "table", context: self)
   }
-  
-  
   
 }

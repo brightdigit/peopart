@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol PostProtocol {  
+protocol PostProtocol : AnyPost {  
   var userId : UUID { get }
   var id : UUID { get }
   var title : String { get }
