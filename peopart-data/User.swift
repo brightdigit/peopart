@@ -8,9 +8,24 @@
 
 import Foundation
 
+/**
+ User data structure.
+ */
 struct User : UserProtocol, Codable {
+  /**
+    User id.
+  */
   let id : UUID
+  /**
+   User name.
+   */
   let name : String
+  /**
+   User avatar image url.
+   */
   let avatar : URL
+  /**
+   User badge.
+   */
   let badge : String
 }

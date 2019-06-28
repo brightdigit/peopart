@@ -163,8 +163,8 @@
 		B3F92AA122A1AE8C00C36269 /* UserEmbeddedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEmbeddedProtocol.swift; sourceTree = "<group>"; };
 		B3F92AA422A1AF7200C36269 /* PostEmbeddedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEmbeddedProtocol.swift; sourceTree = "<group>"; };
 		B3F976D922C69B980083BA73 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
-    B3FF8A3A22C3C78A007E006F /* MenuItemFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemFetcher.swift; sourceTree = "<group>"; };
-    B3FF8A3C22C3C796007E006F /* SelectionMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionMenuItem.swift; sourceTree = "<group>"; };
+		B3FF8A3A22C3C78A007E006F /* MenuItemFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemFetcher.swift; sourceTree = "<group>"; };
+		B3FF8A3C22C3C796007E006F /* SelectionMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionMenuItem.swift; sourceTree = "<group>"; };
 		B3FF8A3E22C3CB41007E006F /* DataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFetcher.swift; sourceTree = "<group>"; };
 		B3FF8A3F22C3CB41007E006F /* AnyPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyPost.swift; sourceTree = "<group>"; };
 		B3FF8A4022C3CB41007E006F /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
@@ -284,24 +284,24 @@
 		B3F92A7122A06AD800C36269 /* peopart-data */ = {
 			isa = PBXGroup;
 			children = (
+				B3FF8A3F22C3CB41007E006F /* AnyPost.swift */,
+				B3EF16DE22A1E7FB00543115 /* Comment.swift */,
 				B3F92A9F22A1AD3100C36269 /* CommentProtocol.swift */,
 				B3F92A9022A09A5400C36269 /* Database.swift */,
 				B3F92A8222A06C5400C36269 /* DatabaseProtocol.swift */,
 				B3F92A9A22A173F300C36269 /* Dataset.swift */,
 				B3F92A9622A0A8BD00C36269 /* DataSource.swift */,
 				B3F92A9822A0A8D500C36269 /* DataSourceError.swift */,
+				B3F976D922C69B980083BA73 /* DateFormatter.swift */,
 				B3F92A7222A06AD800C36269 /* db.json */,
+				B3EF16DB22A1E7B800543115 /* Post.swift */,
+				B3EF16E422A1EE8A00543115 /* PostEmbedded.swift */,
 				B3F92AA422A1AF7200C36269 /* PostEmbeddedProtocol.swift */,
 				B3F92A9D22A1AD1D00C36269 /* PostProtocol.swift */,
 				B3F92A8822A06D9500C36269 /* User.swift */,
+				B3EF16E122A1EC6600543115 /* UserEmbedded.swift */,
 				B3F92AA122A1AE8C00C36269 /* UserEmbeddedProtocol.swift */,
 				B3F92A8522A06C7000C36269 /* UserProtocol.swift */,
-				B3EF16DB22A1E7B800543115 /* Post.swift */,
-				B3EF16DE22A1E7FB00543115 /* Comment.swift */,
-				B3EF16E122A1EC6600543115 /* UserEmbedded.swift */,
-				B3FF8A3F22C3CB41007E006F /* AnyPost.swift */,
-				B3EF16E422A1EE8A00543115 /* PostEmbedded.swift */,
-				B3F976D922C69B980083BA73 /* DateFormatter.swift */,
 			);
 			path = "peopart-data";
 			sourceTree = "<group>";
