@@ -10,6 +10,13 @@ Sample iOS and watchOS application
 * Understand Basic Swift Syntax
 * Understand Basic Xcode IDE and Project Structure 
 * Understand the structure of view controllers and how to display them
+  * [UIAppDelegate](https://developer.apple.com/documentation/uikit/uiapplicationdelegate)
+    * **Description**
+      * Handles the various states and outside entry points into the application  
+    * **Methods**
+      * [application(_:willFinishLaunchingWithOptions:)](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1623032-application) 
+        Setup the `UIWindow` for the `main` `UIScreen` with the root `UIViewController` 
+  * [UIWindow](https://developer.apple.com/documentation/uikit/uiwindow)
   * [UIViewController](https://developer.apple.com/documentation/uikit/uiviewcontroller)
   * [UITabBarController](https://developer.apple.com/documentation/uikit/uitabbarcontroller)
   * [UINavigationController](https://developer.apple.com/documentation/uikit/uinavigationcontroller)
