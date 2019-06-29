@@ -45,17 +45,17 @@ class PostsTableViewController: UITableViewController {
     }
     
     
-    guard let avatarData = try? Data(contentsOf: post.author.avatar) else {
-      return cell
-    }
-    
-    guard let imageData = try? Data(contentsOf: post.post.image) else {
-      return cell
-    }
-    
     postCell.authorNameLabel.text = post.author.name
-    postCell.avatarView.image = UIImage(data: avatarData)
-    postCell.postImageView.image = UIImage(data: imageData)
+    
+    DispatchQueue.global().async {
+      let avatarData = (try? Data(contentsOf: post.author.avatar)).flatMap(UIImage.init(data:))
+      let imageData = (try? Data(contentsOf: post.post.image)).flatMap(UIImage.init(data:))
+      DispatchQueue.main.async {
+        postCell.avatarView.image =  avatarData
+        postCell.postImageView.image = imageData
+      }
+    }
+    
     postCell.titleLabel.text = post.post.title
     postCell.bodyLabel.text = post.post.text
     postCell.dateLabel.text = "\(post.post.date)"

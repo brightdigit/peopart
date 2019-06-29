@@ -29,7 +29,6 @@
 		B3EF16E622A1EE8A00543115 /* PostEmbedded.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF16E422A1EE8A00543115 /* PostEmbedded.swift */; };
 		B3EF16EB22A1F1A100543115 /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF16EA22A1F1A100543115 /* PostsTableViewController.swift */; };
 		B3EF16EE22A1F1C300543115 /* PostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF16ED22A1F1C300543115 /* PostsTableViewCell.swift */; };
-		B3EF16F122A1FA4A00543115 /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF16F022A1FA4A00543115 /* RowController.swift */; };
 		B3EF16F222A1FA4A00543115 /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF16F022A1FA4A00543115 /* RowController.swift */; };
 		B3F89E0D22A05B7600391807 /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F89E0A22A05B7500391807 /* UIWindow.swift */; };
 		B3F89E0E22A05B7600391807 /* TabItemable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F89E0B22A05B7500391807 /* TabItemable.swift */; };
@@ -472,7 +471,6 @@
 				B3F89E1122A05BA900391807 /* UsersTableViewController.swift in Sources */,
 				B3F89E0D22A05B7600391807 /* UIWindow.swift in Sources */,
 				B3EF16EE22A1F1C300543115 /* PostsTableViewCell.swift in Sources */,
-				B3EF16F122A1FA4A00543115 /* RowController.swift in Sources */,
 				B3F92A9122A09A5400C36269 /* Database.swift in Sources */,
 				B3EF16DC22A1E7B800543115 /* Post.swift in Sources */,
 				B3EF16DF22A1E7FB00543115 /* Comment.swift in Sources */,
