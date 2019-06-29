@@ -39,4 +39,11 @@ struct Database : DatabaseProtocol {
     completion(.success(self.dataset.users))
   }
   
+  /**
+   Asyncronous method for attempting to fetch the list of posts.
+   
+   - Parameter completion: callback which takes a Result of either the list of posts or the error.
+   */
+  func posts(_ completion: @escaping (Result<[PostEmbeddedProtocol], Error>) -> Void) {
+  }
 }
