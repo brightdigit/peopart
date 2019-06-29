@@ -178,8 +178,8 @@ git checkout feature/step-2
 ### Concepts
 
 * Being able to decode dates from JSON - [JSONDecoder.dateDecodingStrategy]
-* Protocol-Oriented Programming
-* Functional Programming (map, reduce, sorting, max, etc...)
+* Allow for greater flexability using Protocol-Oriented Programming
+* Create more complex return types using Functional Programming (map, reduce, sorting, max, etc...)
 * Application Transport Security
   ```xml
   <key>NSAppTransportSecurity</key>
