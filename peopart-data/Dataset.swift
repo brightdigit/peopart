@@ -16,10 +16,14 @@ public struct Dataset : Codable {
    List of users in the dataset.
    */
   let users : [User]
+  
+  // TODO: parse and create a `Post` structure
   /**
    List of posts in the dataset.
    */
   // let posts : [Post]
+  
+  // TODO: parse and create a `Comment` structure
   /**
    List of comments in the dataset.
    */

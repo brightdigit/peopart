@@ -25,6 +25,7 @@ struct Database : DatabaseProtocol {
   private init (source: DataSource = defaultSource) throws {
     let dbData = try source.getData()
     let jsonDecoder = JSONDecoder()
+    // TODO: Uh-Oh! Post Dates?!?!?
     let tables = try jsonDecoder.decode(Dataset.self, from: dbData)
     self.dataset = tables
   }
@@ -36,6 +37,7 @@ struct Database : DatabaseProtocol {
    
    */
   public func users(_ completion: @escaping (Result<[UserProtocol], Error>) -> Void) {
+    // TODO: map and use the `UserEmbeddedProtocol`
     completion(.success(self.dataset.users))
   }
   
@@ -45,5 +47,6 @@ struct Database : DatabaseProtocol {
    - Parameter completion: callback which takes a Result of either the list of posts or the error.
    */
   func posts(_ completion: @escaping (Result<[PostEmbeddedProtocol], Error>) -> Void) {
+    // TODO: map and use the `PostEmbeddedProtocol`
   }
 }

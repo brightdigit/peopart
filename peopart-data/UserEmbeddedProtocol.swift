@@ -16,6 +16,8 @@ protocol UserEmbeddedProtocol {
    Primary User Data.
    */
   var user : UserProtocol { get }
+  
+  // TODO: Define user's posts property
   /**
    List of the user's posts.
    */
@@ -23,6 +25,7 @@ protocol UserEmbeddedProtocol {
 }
 
 extension UserEmbeddedProtocol {
+  // TODO: Define the summary text of the user
   /**
    String representing summary data for the post.
    */

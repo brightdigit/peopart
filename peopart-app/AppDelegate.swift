@@ -15,29 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    // TODO: Add Posts
+    // TODO: Create a `PostsTableViewController`
+    // TODO: Create a `PostsTableViewCell`
+    // TODO: Use `PostsTableViewCell` in `PostsTableViewController`
     let tabBarController = UITabBarController(navigationRootViewControllers: [UsersTableViewController()])
     let window = UIWindow.makeWindow(keyAndVisibleWithViewController: tabBarController)
     self.window = window
-    
-    // implement for posts table
-    // implement for users summary and learn functional programming
-    
-    
-    /**
-    concepts:
-     * Basic UI Elements
-     * Optionals
-     * try catch throw
-     * Structs vs Classes
-     * Protocols
-     * Enums
-     * Extensions
-     * Codable
-     * Closures
-     * UITableView     
-    */
-    
+  
     return true
   }
 

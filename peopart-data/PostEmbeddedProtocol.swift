@@ -12,6 +12,7 @@ import Foundation
  Protocol for Post with embedded linked data.
  */
 protocol PostEmbeddedProtocol {
+  // TODO: Define posts property
   /**
    Primary post data.
    */
@@ -22,6 +23,7 @@ protocol PostEmbeddedProtocol {
    */
   var author : UserProtocol { get }
   
+  // TODO: Define comments property
   /**
    All comment data of the post in descending date order.
    */

@@ -23,7 +23,8 @@ protocol DatabaseProtocol {
    - Parameter completion: callback which takes a Result of either the list of users or the error.
    
    */
-  func users (_ completion: @escaping (Result<[UserProtocol], Error>) -> Void)  
+  func users (_ completion: @escaping (Result<[UserProtocol], Error>) -> Void)
+  // TODO: map and use the `UserEmbeddedProtocol`
 
   // func users (_ completion: @escaping (Result<[UserEmbeddedProtocol], Error>) -> Void)
   
