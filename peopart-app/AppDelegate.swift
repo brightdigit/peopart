@@ -15,24 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    // create tab bar view controller with one tab for the users list
-    // parse the json file for users, posts, and comments
-    // implement the user fetch operation
-    // setup the table cell for users
-    // display the users in a table
-    
-    /**
-    concepts:
-     * Basic UI Elements
-     * Optionals
-     * Structs vs Classes
-     * Protocols
-     * Enums
-     * Extensions
-     * Codable
-     * Closures
-     * UITableView     
-    */
+   
+    // create a custom `UITableViewController` for `Users`
+    // create a `UINavigationController`
+    // create a `UITabBarController`
+    // create a `UIWindow` based on the `main` `UIScreen` `frame`
+    // make the `UIWindow` key and visible
     
     return true
   }
