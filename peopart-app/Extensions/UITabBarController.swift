@@ -9,6 +9,13 @@
 import UIKit
 
 extension UITabBarController {
+  /**
+   Convenience which automatically creates a `UINavigationController` for each `UIViewController` and
+   sets up the `tabItem` if it implements `TabItemable`.
+   
+   - Parameter navigationRootViewControllers: the `UIViewControllers` which will be the `rootViewController` for each `UINavigationController`
+   - Parameter animated: whether to animate setting up the `UIViewControllers`
+   */
   convenience init(navigationRootViewControllers: [UIViewController], animated : Bool = false) {
     self.init()
     

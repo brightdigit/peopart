@@ -9,6 +9,11 @@
 import UIKit
 
 extension UIWindow {
+  /**
+   Method which creates a `UIWindow`, set the `rootViewController`, and makes it key and visible
+   
+   - Parameter rootViewController: the `rootViewController` of the new `UIWindow`
+  */
   static func makeWindow(keyAndVisibleWithViewController rootViewController: UIViewController?) -> UIWindow {
     let window = UIWindow(frame: UIScreen.main.bounds)
     window.rootViewController = rootViewController

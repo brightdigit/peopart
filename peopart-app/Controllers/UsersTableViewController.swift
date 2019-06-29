@@ -14,6 +14,7 @@ class UsersTableViewController: UITableViewController {
     super.viewDidLoad()
     
     // TODO: register UINib
+    // TODO: call Database.shared.users() and reload the tableView in the main thread
   }
   
   // MARK: - Table view data source

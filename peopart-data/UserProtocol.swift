@@ -12,5 +12,5 @@ import Foundation
  User Protocol.
  */
 public protocol UserProtocol {
-  
+  // TODO: add properties here reflecting the user data structure in "db.json"
 }

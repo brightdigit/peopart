@@ -19,25 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let tabBarController = UITabBarController(navigationRootViewControllers: [UsersTableViewController()])
     let window = UIWindow.makeWindow(keyAndVisibleWithViewController: tabBarController)
     self.window = window
-    
-    // implement for posts table
-    // implement for users summary and learn functional programming
-    
-    
-    /**
-    concepts:
-     * Basic UI Elements
-     * Optionals
-     * try catch throw
-     * Structs vs Classes
-     * Protocols
-     * Enums
-     * Extensions
-     * Codable
-     * Closures
-     * UITableView     
-    */
-    
+  
     return true
   }
 

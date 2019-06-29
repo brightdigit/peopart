@@ -12,5 +12,5 @@ import Foundation
  User data structure.
  */
 struct User {
-  
+  // TODO: add properties here reflecting the user data structure in "db.json"
 }
