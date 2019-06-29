@@ -16,11 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
    
-    // create a custom `UITableViewController` for `Users`
-    // create a `UINavigationController`
-    // create a `UITabBarController`
-    // create a `UIWindow` based on the `main` `UIScreen` `frame`
-    // make the `UIWindow` key and visible
+    // TODO: create a custom `UITableViewController` for `Users`
+    // TODO: create a `UINavigationController`
+    // TODO: create a `UITabBarController`
+    // TODO: create a `UIWindow` based on the `main` `UIScreen` `frame`
+    // TODO: make the `UIWindow` key and visible
     
     return true
   }
