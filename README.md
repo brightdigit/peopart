@@ -88,18 +88,82 @@ git checkout feature/step-1
 ### Concepts
 
 * Reading a file from the Application [Bundle] using the [Data] type
+  * [Bundle]
+    * **Description**
+      * set of code or resources such as an application or framework
+    * **Properties and Methods**
+      * [main](https://developer.apple.com/documentation/foundation/bundle/1410786-main)
+        * the main application bundle
+      * [url(forResource:withExtension:)](https://developer.apple.com/documentation/foundation/bundle/1411540-url)
+        * attempts to return the url based the resource name and extension
+  * [Data]
+    * **Description**
+      * a set of binary data
+    * **Properties and Methods**
+      * [init(contentsOf:options:) throws](https://developer.apple.com/documentation/foundation/data/3126626-init)
+        * attempts to pull the binary data from a url, throws an error if failed
 * [Codable] protocol for easy JSON decoding
+  * [JSONDecoder]
+    * **Description**
+      * object which decodes a data type from JSON
+    * **Properties and Methods**
+      * [decode(_:from:)](https://developer.apple.com/documentation/foundation/jsondecoder/2895189-decode)
+        * decodes the binary data from JSON format to a `Codable` value of the type specified
 * [Delegation] pattern and how it is used with [UITableViewController]
+  * [UITableViewController](https://developer.apple.com/documentation/uikit/uitableviewcontroller)
+    * **Description**
+      * a `UIViewController` which encapsulates a `UITableView`, `UITableViewDataSource`, `UITableViewDelegate`
+    * **Properties and Methods**
+      * [tableView](https://developer.apple.com/documentation/uikit/uitableviewcontroller/1614753-tableview)
+        * the `UITableView` managed by the `UITableViewController`
+  * [UITableView]
+    * **Description**
+      * a `UIView` for representing rows of data
+    * **Properties and Methods** 
+      * [register(_ nib: UINib?, 
+    forCellReuseIdentifier identifier: String)](https://developer.apple.com/documentation/uikit/uitableview/1614937-register)
+        * registers a `UINib` of the cell to be used throughout the `UITableView`
+      * [reloadData()](https://developer.apple.com/documentation/uikit/uitableview/1614862-reloaddata)
+        * basic method for reloading `UITableView` rows 
+        * _Note_ there are preffered methods of doing this such as reloadRows or [performBatchUpdates](https://developer.apple.com/documentation/uikit/uitableview/2887515-performbatchupdates)
+      * [dataSource](https://developer.apple.com/documentation/uikit/uitableview/1614955-datasource)
+        * property which defines the `UITableViewDataSource` of the `UITableView`
+  * [UITableViewDataSource]
+    * **Description**
+      * a protocol which returns the data and cells for a `UITableView`
+    * **Properties and Methods** 
+      * [numberOfSections(in:)](https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614860-numberofsections)
+        * defines the number of sections in the `UITableView`
+      * [tableView(_:numberOfRowsInSection:)](https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614931-tableview)
+        * defines the number of rows in a particular section for the `UITableView`
+      * [tableView(_:cellForRowAt:)](https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614861-tableview)
+        * returns the `UITableViewCell` for the particular row and section of the `UITableView`
 * Basics of [Model-View-Controller] pattern
 * Concept of [Optionals] and [Optional Chaining] and how to work with them
 * How to throw and catch [Errors] in Swift
 
 ### Tasks
 
-* Parse bundled json file using [Codable] into a set of [structs]
-* Create a custom [UITableViewCell] and understand how to use [IBOutlet]
+* Use [JSONDecoder] to parse the bundled JSON using [Codable] into a set of [structs]
+  * _Hints_
+    * Get the url of the JSON file resource from the `main` `Bundle`
+    * Get the binary `Data` object from the url
+    * Make `User` implement both the `UserProtocol` as well as the `Codable` protocol
+    * Use the `JSONDecoder` to `decode` the binary data into a container object with a `User` `Array`
+* Create and register a custom [UITableViewCell] and understand how to use [IBOutlet]
+  * _Hints_
+    * Create a custom `UITableViewCell` Cocoa Touch class
+    * Use Xcode to define a series of `@IBOutlet` properties which connent with UI element in the `xib`
 * Display the list of users from the JSON file into the `UsersTableViewController`
+  * _Hints_
+    * register our custom `UITableViewCell` Cocoa Touch class
+    * call the method to retrieve users from the database and reload the `tableView`
+    * implement both `tableView(_:numberOfRowsInSection:)` and `tableView(_:cellForRowAt:)` 
+    * in `tableView(_:cellForRowAt:)` dequeue our custom `tableView` cell
+    * set each property in our custom `UITableViewCell`
 * Understand the basics of updating the user interface and the `main` thread
+  * _Hints_
+    * All UI changes need to be on the `main` thread
 
 ![What the end of step 2 should look like](/assets/step-2.jpg?raw=true "Step 2 Result")
 
@@ -113,9 +177,9 @@ git checkout feature/step-2
 
 ### Concepts
 
-* [JSONDecoder.dateDecodingStrategy]
-* Protocol-Oriented Programming
-* Functional Programming (map, reduce, sorting, max, etc...)
+* Being able to decode dates from JSON - [JSONDecoder.dateDecodingStrategy]
+* Allow for greater flexability using Protocol-Oriented Programming
+* Create more complex return types using Functional Programming (map, reduce, sorting, max, etc...)
 * Application Transport Security
   ```xml
   <key>NSAppTransportSecurity</key>
@@ -131,6 +195,8 @@ git checkout feature/step-2
   </dict>
   </dict>
   </dict>
+  ```
+  
 ### Tasks
 
 * Setup Posts and Comments
@@ -161,10 +227,13 @@ git checkout feature/step-3
 [Optional Chaining]: https://docs.swift.org/swift-book/LanguageGuide/OptionalChaining.html
 [Optionals]: https://developer.apple.com/documentation/swift/optional
 [Errors]: https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html
-[sturcts]: https://docs.swift.org/swift-book/LanguageGuide/ClassesAndStructures.html
+[structs]: https://docs.swift.org/swift-book/LanguageGuide/ClassesAndStructures.html
 [UITableViewCell]: https://developer.apple.com/documentation/uikit/views_and_controls/table_views/configuring_the_cells_for_your_table
 [IBOutlet]: https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Outlets/Outlets.html
 [JSONDecoder.dateDecodingStrategy]: https://developer.apple.com/documentation/foundation/jsondecoder/2895216-datedecodingstrategy
 [WKInterfaceTable]: https://developer.apple.com/documentation/watchkit/wkinterfacetable
 [Protocol-Oriented Programming]: https://developer.apple.com/videos/play/wwdc2015/408/
 [WKInterfaceController]: https://developer.apple.com/documentation/watchkit/wkinterfacecontroller
+[UITableView]: https://developer.apple.com/documentation/uikit/uitableview
+[UITableViewDataSource]: https://developer.apple.com/documentation/uikit/uitableviewdatasource
+[JSONDecoder]: https://developer.apple.com/documentation/foundation/jsondecoder
