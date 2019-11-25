@@ -1,0 +1,29 @@
+name: Peopart
+settings:
+  DEVELOPMENT_TEAM: MLT7M394S7
+options:
+  bundleIdPrefix: com.brightdigit
+  createIntermediateGroups: true
+targets:
+  Peopart-iOS-application:
+    type: application
+    platform: iOS
+    info:
+      path: Configuration/Application/iOS/Info.plist
+    dependencies:
+      - target: Peopart-iOS-framework    
+    sources: 
+      - path: Application/iOS
+        group: Application
+      - path: Configuration/Application/iOS
+        group: Configuration
+  Peopart-iOS-framework:
+    type: application
+    platform: iOS
+    info:
+      path: Configuration/Framework/iOS/Info.plist
+    sources: 
+      - path: Sources/iOS
+        group: Sources
+      - path: Configuration/Framework/iOS
+        group: Configuration
