@@ -1,6 +1,8 @@
 name: Peopart
 settings:
   DEVELOPMENT_TEAM: MLT7M394S7
+  CODE_SIGN_IDENTITY: "Apple Development"
+  CODE_SIGN_STYLE: Automatic
 options:
   bundleIdPrefix: com.brightdigit
   createIntermediateGroups: true
@@ -18,7 +20,7 @@ targets:
       - path: Configuration/Application/iOS
         group: Configuration
   Peopart-iOS-framework:
-    type: application
+    type: framework
     platform: iOS
     info:
       path: Configuration/Framework/iOS/Info.plist

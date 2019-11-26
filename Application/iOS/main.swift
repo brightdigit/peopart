@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Peopart_iOS_framework
 
 UIApplicationMain(
     CommandLine.argc,
