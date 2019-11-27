@@ -7,19 +7,19 @@ options:
   bundleIdPrefix: com.brightdigit
   createIntermediateGroups: true
 targets:
-  Peopart-iOS-application:
+  Peopart_iOS_Application:
     type: application
     platform: iOS
     info:
       path: Configuration/Application/iOS/Info.plist
     dependencies:
-      - target: Peopart-iOS-framework    
+      - target: Peopart_iOS_Framework    
     sources: 
       - path: Application/iOS
         group: Application
       - path: Configuration/Application/iOS
         group: Configuration
-  Peopart-iOS-framework:
+  Peopart_iOS_Framework:
     type: framework
     platform: iOS
     info:
