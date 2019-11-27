@@ -12,6 +12,8 @@ targets:
     platform: iOS
     info:
       path: Configuration/Application/iOS/Info.plist
+      properties:
+        UILaunchStoryboardName: LaunchScreen.storyboard
     dependencies:
       - target: Peopart_iOS_Framework    
     sources: 
