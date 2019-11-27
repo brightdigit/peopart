@@ -22,7 +22,7 @@ class SceneDelegate : UIResponder, UIWindowSceneDelegate {
 
 public class AppDelegate : UIResponder, UIApplicationDelegate {
   public func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-    var configuration = UISceneConfiguration()
+    let configuration = UISceneConfiguration()
     configuration.delegateClass = SceneDelegate.self
     return configuration
   }
