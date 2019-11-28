@@ -1,0 +1,33 @@
+name: Peopart
+settings:
+  DEVELOPMENT_TEAM: MLT7M394S7
+  CODE_SIGN_IDENTITY: "Apple Development"
+  CODE_SIGN_STYLE: Automatic
+options:
+  bundleIdPrefix: com.brightdigit
+  createIntermediateGroups: true
+targets:
+  Peopart_iOS_Application:
+    type: application
+    platform: iOS
+    info:
+      path: Configuration/Application/iOS/Info.plist
+      properties:
+        UILaunchStoryboardName: LaunchScreen.storyboard
+    dependencies:
+      - target: Peopart_iOS_Framework    
+    sources: 
+      - path: Application/iOS
+        group: Application
+      - path: Configuration/Application/iOS
+        group: Configuration
+  Peopart_iOS_Framework:
+    type: framework
+    platform: iOS
+    info:
+      path: Configuration/Framework/iOS/Info.plist
+    sources: 
+      - path: Sources/iOS
+        group: Sources
+      - path: Configuration/Framework/iOS
+        group: Configuration
