@@ -9,7 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+      TabView{
+        NavigationView{
+          Text("Users").navigationBarTitle("Users")
+        }.tabItem {
+          Image("User").renderingMode(.template)
+          Text("Users")
+        }
+        NavigationView{
+          Text("Posts").navigationBarTitle("Posts")
+        }.tabItem {
+          Image("Post").renderingMode(.template)
+          Text("Posts")
+        }
+        NavigationView{
+          Text("Comments").navigationBarTitle("Comments")
+        }.tabItem {
+          Image("Comment").renderingMode(.template)
+          Text("Comments")
+        }
+      }
     }
 }
 
