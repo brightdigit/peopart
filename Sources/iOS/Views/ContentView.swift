@@ -8,17 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+  @EnvironmentObject var data : DataObject
+  
     var body: some View {
       TabView{
-        NavigationView{
-          Text("Users").navigationBarTitle("Users")
-        }.tabItem {
+        UserListView().tabItem {
           Image("User").renderingMode(.template)
           Text("Users")
         }
-        NavigationView{
-          Text("Posts").navigationBarTitle("Posts")
-        }.tabItem {
+        PostListView().tabItem {
           Image("Post").renderingMode(.template)
           Text("Posts")
         }

@@ -10,8 +10,9 @@ import SwiftUI
 
 //class UsersTableViewCell: UITableViewCell {
 struct UserItemView : View {
+  let user : UserEmbeddedProtocol
   var body: some View {
-    Text("User")
+    Text(user.user.name)
   }
 }
 //  @IBOutlet weak var avatarImageView: UIImageView!

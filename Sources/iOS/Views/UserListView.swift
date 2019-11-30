@@ -7,11 +7,29 @@
 //
 
 import SwiftUI
+import Combine
 
+extension UserEmbedded : Identifiable {
+  var id : UUID {
+    return user.id
+  }
+}
 //class UsersTableViewController: UITableViewController {
 struct UserListView : View {
+  @EnvironmentObject var data : DataObject
+  
+  var users : [UserEmbedded] {
+    data.users.flatMap{
+      try? $0.get()
+    } ?? [UserEmbedded]()
+  }
+  
   var body: some View {
-    Text("Users")
+    NavigationView{
+      List(self.users) {
+        UserItemView(user: $0)
+      }.navigationBarTitle("Users")
+    }
   }
 }
 //  var users : [UserEmbeddedProtocol]?

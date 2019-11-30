@@ -11,7 +11,9 @@ import SwiftUI
 //class PostsTableViewController: UITableViewController {
 struct PostListView : View {
   var body: some View {
-    Text("Posts")
+    NavigationView{
+      Text("Posts").navigationBarTitle("Posts")
+    }
   }
 }
 //  var posts : [PostEmbeddedProtocol]?

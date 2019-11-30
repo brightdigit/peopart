@@ -11,6 +11,6 @@ import Peopart_iOS_Framework
 UIApplicationMain(
     CommandLine.argc,
     CommandLine.unsafeArgv,
-    NSStringFromClass(PeopartApplication.self),
+    NSStringFromClass(Peopart.self),
     NSStringFromClass(AppDelegate.self)
 )
