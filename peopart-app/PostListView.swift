@@ -8,22 +8,25 @@
 
 import SwiftUI
 
+
 struct PostListView: View {
   @EnvironmentObject var dataset : DataEnvironmentObject
+  @StateObject var userPostsObject : UserPostsObject
+  
+  var postsResult : Result<[PostEmbeddedViewModel], Error>? {
+    return self.userPostsObject.userID != nil ? self.userPostsObject.postsResult : self.dataset.postsResult
+  }
+  init (userID : UUID? = nil) {
+    self._userPostsObject = StateObject(wrappedValue: UserPostsObject(userID: userID))
+  }
+  
   var body: some View {
-    Group{
-      switch dataset.postsResult {
-      case .success(let posts):
-        List(posts) { post in
-          PostItemView(post: post)
-        }
-      case .failure(let error):
-        Text(error.localizedDescription)
-      case .none:
-        ProgressView()
+    PostListResultView(postsResult: self.postsResult).onAppear {
+      if self.userPostsObject.userID != nil {
+        self.userPostsObject.postsTrigger.send(self.dataset.database)
+      } else {
+        self.dataset.postsTrigger.send()
       }
-    }.onAppear{
-      self.dataset.postsTrigger.send()
     }
   }
 }

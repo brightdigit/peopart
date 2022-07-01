@@ -13,17 +13,26 @@ import Combine
 struct UserListView: View {
   @EnvironmentObject var dataset : DataEnvironmentObject
     var body: some View {
-      Group{
-        switch dataset.usersResult {
-        case .success(let users):
-          List(users) { user in
-            UserItemView(user: user)
+      NavigationView {
+        
+        Group{
+          switch dataset.usersResult {
+          case .success(let users):
+            List(users) { user in
+              NavigationLink {
+                PostListView(userID: user.id).navigationTitle("\(user.object.user.name) Posts")
+              } label: {
+                
+                UserItemView(user: user)
+              }
+
+            }
+          case .failure(let error):
+            Text(error.localizedDescription)
+          case .none:
+            ProgressView()
           }
-        case .failure(let error):
-          Text(error.localizedDescription)
-        case .none:
-          ProgressView()
-        }
+        }.navigationTitle("Users")
       }.onAppear{
         self.dataset.usersTrigger.send()
       }

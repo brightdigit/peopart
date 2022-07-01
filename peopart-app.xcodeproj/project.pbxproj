@@ -35,6 +35,8 @@
 		B3BE5788286F6280002068A4 /* ImageLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE577E286F6280002068A4 /* ImageLoaderService.swift */; };
 		B3BE5789286F6280002068A4 /* PreviewPostEmbedded.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE577F286F6280002068A4 /* PreviewPostEmbedded.swift */; };
 		B3BE578A286F6280002068A4 /* DataEnvironmentObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE5780286F6280002068A4 /* DataEnvironmentObject.swift */; };
+		B3BE578C286F67DB002068A4 /* PostListResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE578B286F67DB002068A4 /* PostListResultView.swift */; };
+		B3BE578E286F67F3002068A4 /* UserPostsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE578D286F67F3002068A4 /* UserPostsObject.swift */; };
 		B3EF16DC22A1E7B800543115 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF16DB22A1E7B800543115 /* Post.swift */; };
 		B3EF16DD22A1E7B800543115 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF16DB22A1E7B800543115 /* Post.swift */; };
 		B3EF16DF22A1E7FB00543115 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF16DE22A1E7FB00543115 /* Comment.swift */; };
@@ -166,6 +168,8 @@
 		B3BE577E286F6280002068A4 /* ImageLoaderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoaderService.swift; sourceTree = "<group>"; };
 		B3BE577F286F6280002068A4 /* PreviewPostEmbedded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewPostEmbedded.swift; sourceTree = "<group>"; };
 		B3BE5780286F6280002068A4 /* DataEnvironmentObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEnvironmentObject.swift; sourceTree = "<group>"; };
+		B3BE578B286F67DB002068A4 /* PostListResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListResultView.swift; sourceTree = "<group>"; };
+		B3BE578D286F67F3002068A4 /* UserPostsObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostsObject.swift; sourceTree = "<group>"; };
 		B3EF16DB22A1E7B800543115 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		B3EF16DE22A1E7FB00543115 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		B3EF16E122A1EC6600543115 /* UserEmbedded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEmbedded.swift; sourceTree = "<group>"; };
@@ -266,6 +270,8 @@
 				B3BE576D286F4AE9002068A4 /* PostListView.swift */,
 				B3BE5773286F4CB9002068A4 /* UserItemView.swift */,
 				B3BE5775286F5D58002068A4 /* PostItemView.swift */,
+				B3BE578B286F67DB002068A4 /* PostListResultView.swift */,
+				B3BE578D286F67F3002068A4 /* UserPostsObject.swift */,
 			);
 			path = "peopart-app";
 			sourceTree = "<group>";
@@ -504,6 +510,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3BE578C286F67DB002068A4 /* PostListResultView.swift in Sources */,
 				B3F92AA222A1AE8C00C36269 /* UserEmbeddedProtocol.swift in Sources */,
 				B3BE5776286F5D58002068A4 /* PostItemView.swift in Sources */,
 				B3BE5774286F4CB9002068A4 /* UserItemView.swift in Sources */,
@@ -538,6 +545,7 @@
 				B3BE5789286F6280002068A4 /* PreviewPostEmbedded.swift in Sources */,
 				B3BE5788286F6280002068A4 /* ImageLoaderService.swift in Sources */,
 				B3EF16DF22A1E7FB00543115 /* Comment.swift in Sources */,
+				B3BE578E286F67F3002068A4 /* UserPostsObject.swift in Sources */,
 				B3F92A8622A06C7000C36269 /* UserProtocol.swift in Sources */,
 				B3F92A9322A09E4000C36269 /* UsersTableViewCell.swift in Sources */,
 				B3BE5782286F6280002068A4 /* PreviewUserEmbedded.swift in Sources */,
