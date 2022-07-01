@@ -8,10 +8,33 @@
 
 import SwiftUI
 
-struct PeopartApp : App {
+#if !USE_UIKIT
+@main
+struct PeopartApp : App {}
+#else
+struct PeopartApp : App {}
+#endif
+
+
+extension PeopartApp {
   var body: some Scene {
     WindowGroup {
-      UserListView()
+      TabView{
+        UserListView().tabItem {
+          Label {
+            Text("Users")
+          } icon: {
+            Image(systemName: "person.3.fill")
+          }
+        }
+        PostListView().tabItem {
+          Label {
+            Text("Posts")
+          } icon: {
+            Image(systemName: "note.text")
+          }
+        }
+      }.environmentObject(DataEnvironmentObject(database: Database.shared))
     }
   }
 }

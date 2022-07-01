@@ -8,10 +8,18 @@
 
 import UIKit
 
+#if USE_UIKIT
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
   var window: UIWindow?
+}
+#else
+class AppDelegate: UIResponder, UIApplicationDelegate {
+  var window: UIWindow?
+}
+#endif
+extension AppDelegate {
+
 
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

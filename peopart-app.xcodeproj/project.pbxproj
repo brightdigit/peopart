@@ -22,6 +22,19 @@
 		B3BE5769286F3D3E002068A4 /* PeopartApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE5768286F3D3E002068A4 /* PeopartApp.swift */; };
 		B3BE576B286F3D74002068A4 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE576A286F3D74002068A4 /* UserListView.swift */; };
 		B3BE576C286F3D91002068A4 /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF16F022A1FA4A00543115 /* RowController.swift */; };
+		B3BE576E286F4AE9002068A4 /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE576D286F4AE9002068A4 /* PostListView.swift */; };
+		B3BE5774286F4CB9002068A4 /* UserItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE5773286F4CB9002068A4 /* UserItemView.swift */; };
+		B3BE5776286F5D58002068A4 /* PostItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE5775286F5D58002068A4 /* PostItemView.swift */; };
+		B3BE5781286F6280002068A4 /* PostEmbeddedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE5777286F627F002068A4 /* PostEmbeddedViewModel.swift */; };
+		B3BE5782286F6280002068A4 /* PreviewUserEmbedded.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE5778286F627F002068A4 /* PreviewUserEmbedded.swift */; };
+		B3BE5783286F6280002068A4 /* PreviewUserEmbeddedPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE5779286F627F002068A4 /* PreviewUserEmbeddedPost.swift */; };
+		B3BE5784286F6280002068A4 /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE577A286F627F002068A4 /* RemoteImageView.swift */; };
+		B3BE5785286F6280002068A4 /* PreviewDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE577B286F6280002068A4 /* PreviewDatabase.swift */; };
+		B3BE5786286F6280002068A4 /* UserEmbeddedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE577C286F6280002068A4 /* UserEmbeddedViewModel.swift */; };
+		B3BE5787286F6280002068A4 /* PreviewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE577D286F6280002068A4 /* PreviewPost.swift */; };
+		B3BE5788286F6280002068A4 /* ImageLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE577E286F6280002068A4 /* ImageLoaderService.swift */; };
+		B3BE5789286F6280002068A4 /* PreviewPostEmbedded.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE577F286F6280002068A4 /* PreviewPostEmbedded.swift */; };
+		B3BE578A286F6280002068A4 /* DataEnvironmentObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE5780286F6280002068A4 /* DataEnvironmentObject.swift */; };
 		B3EF16DC22A1E7B800543115 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF16DB22A1E7B800543115 /* Post.swift */; };
 		B3EF16DD22A1E7B800543115 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF16DB22A1E7B800543115 /* Post.swift */; };
 		B3EF16DF22A1E7FB00543115 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF16DE22A1E7FB00543115 /* Comment.swift */; };
@@ -32,7 +45,6 @@
 		B3EF16E622A1EE8A00543115 /* PostEmbedded.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF16E422A1EE8A00543115 /* PostEmbedded.swift */; };
 		B3EF16EB22A1F1A100543115 /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF16EA22A1F1A100543115 /* PostsTableViewController.swift */; };
 		B3EF16EE22A1F1C300543115 /* PostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF16ED22A1F1C300543115 /* PostsTableViewCell.swift */; };
-		B3EF16F222A1FA4A00543115 /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF16F022A1FA4A00543115 /* RowController.swift */; };
 		B3F89E0D22A05B7600391807 /* UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F89E0A22A05B7500391807 /* UIWindow.swift */; };
 		B3F89E0E22A05B7600391807 /* TabItemable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F89E0B22A05B7500391807 /* TabItemable.swift */; };
 		B3F89E0F22A05B7600391807 /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F89E0C22A05B7600391807 /* UITabBarController.swift */; };
@@ -141,6 +153,19 @@
 		B345374922A19B6500FE9C39 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B3BE5768286F3D3E002068A4 /* PeopartApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopartApp.swift; sourceTree = "<group>"; };
 		B3BE576A286F3D74002068A4 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		B3BE576D286F4AE9002068A4 /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
+		B3BE5773286F4CB9002068A4 /* UserItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItemView.swift; sourceTree = "<group>"; };
+		B3BE5775286F5D58002068A4 /* PostItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItemView.swift; sourceTree = "<group>"; };
+		B3BE5777286F627F002068A4 /* PostEmbeddedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostEmbeddedViewModel.swift; sourceTree = "<group>"; };
+		B3BE5778286F627F002068A4 /* PreviewUserEmbedded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewUserEmbedded.swift; sourceTree = "<group>"; };
+		B3BE5779286F627F002068A4 /* PreviewUserEmbeddedPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewUserEmbeddedPost.swift; sourceTree = "<group>"; };
+		B3BE577A286F627F002068A4 /* RemoteImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteImageView.swift; sourceTree = "<group>"; };
+		B3BE577B286F6280002068A4 /* PreviewDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewDatabase.swift; sourceTree = "<group>"; };
+		B3BE577C286F6280002068A4 /* UserEmbeddedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEmbeddedViewModel.swift; sourceTree = "<group>"; };
+		B3BE577D286F6280002068A4 /* PreviewPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewPost.swift; sourceTree = "<group>"; };
+		B3BE577E286F6280002068A4 /* ImageLoaderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoaderService.swift; sourceTree = "<group>"; };
+		B3BE577F286F6280002068A4 /* PreviewPostEmbedded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewPostEmbedded.swift; sourceTree = "<group>"; };
+		B3BE5780286F6280002068A4 /* DataEnvironmentObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEnvironmentObject.swift; sourceTree = "<group>"; };
 		B3EF16DB22A1E7B800543115 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		B3EF16DE22A1E7FB00543115 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		B3EF16E122A1EC6600543115 /* UserEmbedded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEmbedded.swift; sourceTree = "<group>"; };
@@ -222,12 +247,25 @@
 		B302E5B622A048B000D573F2 /* peopart-app */ = {
 			isa = PBXGroup;
 			children = (
+				B3BE5780286F6280002068A4 /* DataEnvironmentObject.swift */,
+				B3BE577E286F6280002068A4 /* ImageLoaderService.swift */,
+				B3BE5777286F627F002068A4 /* PostEmbeddedViewModel.swift */,
+				B3BE577B286F6280002068A4 /* PreviewDatabase.swift */,
+				B3BE577D286F6280002068A4 /* PreviewPost.swift */,
+				B3BE577F286F6280002068A4 /* PreviewPostEmbedded.swift */,
+				B3BE5778286F627F002068A4 /* PreviewUserEmbedded.swift */,
+				B3BE5779286F627F002068A4 /* PreviewUserEmbeddedPost.swift */,
+				B3BE577A286F627F002068A4 /* RemoteImageView.swift */,
+				B3BE577C286F6280002068A4 /* UserEmbeddedViewModel.swift */,
 				B3BE5767286F3D25002068A4 /* UIKit */,
 				B302E5C322A048B200D573F2 /* Info.plist */,
 				B302E5BE22A048B200D573F2 /* Assets.xcassets */,
 				B302E5C022A048B200D573F2 /* LaunchScreen.storyboard */,
 				B3BE5768286F3D3E002068A4 /* PeopartApp.swift */,
 				B3BE576A286F3D74002068A4 /* UserListView.swift */,
+				B3BE576D286F4AE9002068A4 /* PostListView.swift */,
+				B3BE5773286F4CB9002068A4 /* UserItemView.swift */,
+				B3BE5775286F5D58002068A4 /* PostItemView.swift */,
 			);
 			path = "peopart-app";
 			sourceTree = "<group>";
@@ -467,11 +505,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3F92AA222A1AE8C00C36269 /* UserEmbeddedProtocol.swift in Sources */,
+				B3BE5776286F5D58002068A4 /* PostItemView.swift in Sources */,
+				B3BE5774286F4CB9002068A4 /* UserItemView.swift in Sources */,
+				B3BE5786286F6280002068A4 /* UserEmbeddedViewModel.swift in Sources */,
+				B3BE578A286F6280002068A4 /* DataEnvironmentObject.swift in Sources */,
 				B3F89E0E22A05B7600391807 /* TabItemable.swift in Sources */,
 				B3F92A8322A06C5400C36269 /* DatabaseProtocol.swift in Sources */,
 				B3F92AA522A1AF7200C36269 /* PostEmbeddedProtocol.swift in Sources */,
 				B3BE5769286F3D3E002068A4 /* PeopartApp.swift in Sources */,
 				B3F976DA22C69B980083BA73 /* DateFormatter.swift in Sources */,
+				B3BE576E286F4AE9002068A4 /* PostListView.swift in Sources */,
 				B3F89E0F22A05B7600391807 /* UITabBarController.swift in Sources */,
 				B3BE576B286F3D74002068A4 /* UserListView.swift in Sources */,
 				B3F92A9E22A1AD1D00C36269 /* PostProtocol.swift in Sources */,
@@ -481,6 +524,8 @@
 				B3EF16EB22A1F1A100543115 /* PostsTableViewController.swift in Sources */,
 				B302E5B822A048B000D573F2 /* AppDelegate.swift in Sources */,
 				B3EF16E522A1EE8A00543115 /* PostEmbedded.swift in Sources */,
+				B3BE5784286F6280002068A4 /* RemoteImageView.swift in Sources */,
+				B3BE5781286F6280002068A4 /* PostEmbeddedViewModel.swift in Sources */,
 				B3F9B30A22C68F250022B48E /* AnyPost.swift in Sources */,
 				B3F92A8922A06D9500C36269 /* User.swift in Sources */,
 				B3F92A9B22A173F300C36269 /* Dataset.swift in Sources */,
@@ -490,9 +535,15 @@
 				B3EF16EE22A1F1C300543115 /* PostsTableViewCell.swift in Sources */,
 				B3F92A9122A09A5400C36269 /* Database.swift in Sources */,
 				B3EF16DC22A1E7B800543115 /* Post.swift in Sources */,
+				B3BE5789286F6280002068A4 /* PreviewPostEmbedded.swift in Sources */,
+				B3BE5788286F6280002068A4 /* ImageLoaderService.swift in Sources */,
 				B3EF16DF22A1E7FB00543115 /* Comment.swift in Sources */,
 				B3F92A8622A06C7000C36269 /* UserProtocol.swift in Sources */,
 				B3F92A9322A09E4000C36269 /* UsersTableViewCell.swift in Sources */,
+				B3BE5782286F6280002068A4 /* PreviewUserEmbedded.swift in Sources */,
+				B3BE5787286F6280002068A4 /* PreviewPost.swift in Sources */,
+				B3BE5783286F6280002068A4 /* PreviewUserEmbeddedPost.swift in Sources */,
+				B3BE5785286F6280002068A4 /* PreviewDatabase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -804,6 +855,128 @@
 			};
 			name = Release;
 		};
+		B3BE576F286F4C4D002068A4 /* UIKit */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = UIKit;
+		};
+		B3BE5770286F4C4D002068A4 /* UIKit */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MLT7M394S7;
+				INFOPLIST_FILE = "peopart-app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brightdigit.peopart-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG USE_UIKIT";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = UIKit;
+		};
+		B3BE5771286F4C4D002068A4 /* UIKit */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MLT7M394S7;
+				IBSC_MODULE = peopart_app_WatchKit_Extension;
+				INFOPLIST_FILE = "peopart-app WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brightdigit.peopart-app.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = UIKit;
+		};
+		B3BE5772286F4C4D002068A4 /* UIKit */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MLT7M394S7;
+				INFOPLIST_FILE = "peopart-app WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brightdigit.peopart-app.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = UIKit;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -811,6 +984,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B302E5E422A048B300D573F2 /* Debug */,
+				B3BE576F286F4C4D002068A4 /* UIKit */,
 				B302E5E522A048B300D573F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -820,6 +994,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B302E5E722A048B300D573F2 /* Debug */,
+				B3BE5772286F4C4D002068A4 /* UIKit */,
 				B302E5E822A048B300D573F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -829,6 +1004,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B302E5EB22A048B300D573F2 /* Debug */,
+				B3BE5771286F4C4D002068A4 /* UIKit */,
 				B302E5EC22A048B300D573F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -838,6 +1014,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B302E5EF22A048B400D573F2 /* Debug */,
+				B3BE5770286F4C4D002068A4 /* UIKit */,
 				B302E5F022A048B400D573F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

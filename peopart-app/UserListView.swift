@@ -7,10 +7,26 @@
 //
 
 import SwiftUI
+import Combine
+
 
 struct UserListView: View {
+  @EnvironmentObject var dataset : DataEnvironmentObject
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+      Group{
+        switch dataset.usersResult {
+        case .success(let users):
+          List(users) { user in
+            UserItemView(user: user)
+          }
+        case .failure(let error):
+          Text(error.localizedDescription)
+        case .none:
+          ProgressView()
+        }
+      }.onAppear{
+        self.dataset.usersTrigger.send()
+      }
     }
 }
 
