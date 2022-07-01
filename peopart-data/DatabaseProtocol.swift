@@ -30,5 +30,5 @@ protocol DatabaseProtocol {
    
    - Parameter completion: callback which takes a Result of either the list of posts or the error.
    */
-  func posts (_ completion: @escaping (Result<[PostEmbeddedProtocol], Error>) -> Void)
+  func posts (fromUserID userID: UUID?, _ completion: @escaping (Result<[PostEmbeddedProtocol], Error>) -> Void)
 }

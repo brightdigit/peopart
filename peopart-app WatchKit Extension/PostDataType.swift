@@ -6,7 +6,7 @@ struct PostDataType : DataFetcher {
     case .some(.posts(let posts)):
       completion(.success(posts.map(PostDataItem.init)))
     default:
-      Database.shared.posts { (result) in
+      Database.shared.posts(fromUserID: nil) { (result) in
         let newResult = result.map({ (posts) -> [MenuItem] in
           return posts.map(PostDataItem.init)
         })

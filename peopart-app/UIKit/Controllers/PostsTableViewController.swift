@@ -9,13 +9,23 @@
 import UIKit
 
 class PostsTableViewController: UITableViewController {
+  let userID : UUID?
   var posts : [PostEmbeddedProtocol]?
+  
+  init(userID: UUID? = nil) {
+    self.userID = userID
+    super.init(style: .plain)
+  }
+  
+  required init?(coder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     self.tableView.register(UINib(nibName: "PostsTableViewCell", bundle: Bundle.main), forCellReuseIdentifier: "posts")
-    Database.shared.posts { (result) in
+    Database.shared.posts(fromUserID: self.userID) { (result) in
       if case let .success(posts) = result {
         self.posts = posts
         DispatchQueue.main.async {

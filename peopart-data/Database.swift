@@ -58,13 +58,13 @@ struct Database : DatabaseProtocol {
     
     
   }
-  
+
   /**
    Asyncronous method for attempting to fetch the list of posts.
    
    - Parameter completion: callback which takes a Result of either the list of posts or the error.
    */
-  func posts(_ completion: @escaping (Result<[PostEmbeddedProtocol], Error>) -> Void) {
+func posts(fromUserID userID: UUID?, _ completion: @escaping (Result<[PostEmbeddedProtocol], Error>) -> Void) {
     DispatchQueue.global().async {
       let commentDictionary = [UUID : [Comment]](grouping: self.dataset.comments, by: { (comment) -> UUID in
         return comment.postId
@@ -74,7 +74,9 @@ struct Database : DatabaseProtocol {
         })
       })
       
-      let userDictionary = [UUID : [User]](grouping: self.dataset.users, by: { (user) -> UUID in
+      let userDictionary = [UUID : [User]](grouping: self.dataset.users.filter({ user in
+        user.id == userID || userID == nil
+      }), by: { (user) -> UUID in
         return user.id
       }).compactMapValues({ (users) -> User? in
         return users.first
