@@ -12,29 +12,38 @@ import Combine
 
 struct UserListView: View {
   @EnvironmentObject var dataset : DataEnvironmentObject
-    var body: some View {
-      NavigationView {
-        
-        Group{
-          switch dataset.usersResult {
-          case .success(let users):
-            List(users) { user in
-              NavigationLink {
-                PostListView(userID: user.id).navigationTitle("\(user.object.user.name) Posts")
-              } label: {
-                
-                UserItemView(user: user)
+  
+  @State var usersResult : Result<[UserEmbeddedViewModel], Error>?
+  
+  var body: some View {
+      Group {
+        if #available(iOS 16.0, *) {
+          NavigationStack {
+            //Group{
+              switch usersResult {
+              case .success(let users):
+                List{
+                  ForEach(users) { user in
+                    UserItemView(user: user)
+                  }
+                }
+              case .failure(let error):
+                Text(error.localizedDescription)
+              case .none:
+                ProgressView()
               }
-
             }
-          case .failure(let error):
-            Text(error.localizedDescription)
-          case .none:
-            ProgressView()
+            //.navigationTitle("Users")
+          
+        } else {
+          NavigationView {
+            UserResultView(usersResult: dataset.usersResult).navigationTitle("Users")
           }
-        }.navigationTitle("Users")
+        }
       }.onAppear{
         self.dataset.usersTrigger.send()
+      }.onReceive(self.dataset.$usersResult) { userResults in
+        self.usersResult = userResults
       }
     }
 }

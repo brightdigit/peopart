@@ -16,7 +16,7 @@ class DataEnvironmentObject : ObservableObject {
       result.map{
         $0.map(UserEmbeddedViewModel.init(object:))
       }
-    }).receive(on: DispatchQueue.main)
+    }).print().receive(on: DispatchQueue.main)
       .assign(to: &self.$usersResult)
     
     postsTrigger.flatMap{

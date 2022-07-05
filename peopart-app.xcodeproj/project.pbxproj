@@ -37,6 +37,7 @@
 		B3BE578A286F6280002068A4 /* DataEnvironmentObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE5780286F6280002068A4 /* DataEnvironmentObject.swift */; };
 		B3BE578C286F67DB002068A4 /* PostListResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE578B286F67DB002068A4 /* PostListResultView.swift */; };
 		B3BE578E286F67F3002068A4 /* UserPostsObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE578D286F67F3002068A4 /* UserPostsObject.swift */; };
+		B3BE5790286F6978002068A4 /* UserResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BE578F286F6978002068A4 /* UserResultView.swift */; };
 		B3EF16DC22A1E7B800543115 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF16DB22A1E7B800543115 /* Post.swift */; };
 		B3EF16DD22A1E7B800543115 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF16DB22A1E7B800543115 /* Post.swift */; };
 		B3EF16DF22A1E7FB00543115 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EF16DE22A1E7FB00543115 /* Comment.swift */; };
@@ -170,6 +171,7 @@
 		B3BE5780286F6280002068A4 /* DataEnvironmentObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEnvironmentObject.swift; sourceTree = "<group>"; };
 		B3BE578B286F67DB002068A4 /* PostListResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListResultView.swift; sourceTree = "<group>"; };
 		B3BE578D286F67F3002068A4 /* UserPostsObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostsObject.swift; sourceTree = "<group>"; };
+		B3BE578F286F6978002068A4 /* UserResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResultView.swift; sourceTree = "<group>"; };
 		B3EF16DB22A1E7B800543115 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		B3EF16DE22A1E7FB00543115 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		B3EF16E122A1EC6600543115 /* UserEmbedded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEmbedded.swift; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 				B3BE5775286F5D58002068A4 /* PostItemView.swift */,
 				B3BE578B286F67DB002068A4 /* PostListResultView.swift */,
 				B3BE578D286F67F3002068A4 /* UserPostsObject.swift */,
+				B3BE578F286F6978002068A4 /* UserResultView.swift */,
 			);
 			path = "peopart-app";
 			sourceTree = "<group>";
@@ -515,6 +518,7 @@
 				B3BE5776286F5D58002068A4 /* PostItemView.swift in Sources */,
 				B3BE5774286F4CB9002068A4 /* UserItemView.swift in Sources */,
 				B3BE5786286F6280002068A4 /* UserEmbeddedViewModel.swift in Sources */,
+				B3BE5790286F6978002068A4 /* UserResultView.swift in Sources */,
 				B3BE578A286F6280002068A4 /* DataEnvironmentObject.swift in Sources */,
 				B3F89E0E22A05B7600391807 /* TabItemable.swift in Sources */,
 				B3F92A8322A06C5400C36269 /* DatabaseProtocol.swift in Sources */,
