@@ -13,37 +13,41 @@ import Combine
 struct UserListView: View {
   @EnvironmentObject var dataset : DataEnvironmentObject
   
-  @State var usersResult : Result<[UserEmbeddedViewModel], Error>?
-  
-  var body: some View {
-      Group {
-        if #available(iOS 16.0, *) {
-          NavigationStack {
-            //Group{
-              switch usersResult {
-              case .success(let users):
-                List{
-                  ForEach(users) { user in
-                    UserItemView(user: user)
-                  }
+    var main: some View {
+        Group{
+            if #available(iOS 16.0, *) {
+                //Group{
+                switch dataset.usersResult {
+                case .success(let users):
+                    
+                    NavigationStack {
+                        List{
+                            ForEach(users) { user in
+                                NavigationLink(value: user) {
+                                    UserItemView(user: user)
+                                }
+                            }
+                        }.navigationDestination(for: UserEmbeddedViewModel.self) { user in
+                            PostListView(userID: user.id).navigationTitle("\(user.object.user.name) Posts")
+                        }.navigationTitle("Users")
+                    }
+                case .failure(let error):
+                    Text(error.localizedDescription)
+                case .none:
+                    ProgressView()
                 }
-              case .failure(let error):
-                Text(error.localizedDescription)
-              case .none:
-                ProgressView()
-              }
+                //.navigationTitle("Users")
+                
+            } else {
+                NavigationView {
+                    UserResultView(usersResult: dataset.usersResult).navigationTitle("Users")
+                }
             }
-            //.navigationTitle("Users")
-          
-        } else {
-          NavigationView {
-            UserResultView(usersResult: dataset.usersResult).navigationTitle("Users")
-          }
         }
-      }.onAppear{
+    }
+  var body: some View {
+      main.onAppear{
         self.dataset.usersTrigger.send()
-      }.onReceive(self.dataset.$usersResult) { userResults in
-        self.usersResult = userResults
       }
     }
 }

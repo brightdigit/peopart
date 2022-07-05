@@ -14,9 +14,18 @@ struct PostListResultView: View {
     Group{
       switch postsResult {
       case .success(let posts):
-        List(posts) { post in
-          PostItemView(post: post)
-        }
+          if #available(iOS 16.0, *) {
+              List(posts) { post in
+                      NavigationLink(value: post) {
+                          PostItemView(post: post)
+                      }
+                  
+              }.navigationDestination(for: PostEmbeddedViewModel.self) { post in
+                  Text(post.object.comments.count.description)
+              }
+          } else {
+              // Fallback on earlier versions
+          }
       case .failure(let error):
         Text(error.localizedDescription)
       case .none:
